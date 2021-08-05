@@ -7,12 +7,22 @@
 ### User stories:
 
 #### User goals:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
   ##### General visitor to the site:
 
   ##### Returning site user:
+</details>
 
 #### Developer goals:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+</details>
 
 ## Project design
 
@@ -109,17 +119,27 @@
 </details>
 
 ### Potential future features:
+
+- #### Future feature X:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
-
-- #### Future feature X:
+<details>
 
 - #### Future feature Y:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+<details>
 
 - #### Future feature Z:
-</details>
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+<details>
 
 ## Technologies Used
 
@@ -156,12 +176,12 @@
 Full project testing details can be found [here](testing.md)
 
 ## Deployment
-<details>
-  <summary>
-  click to view
-  </summary>
 
 ### GitHub Pages:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
 This project has been deployed to [GitHub Pages](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages). The deployment process carried out was as follows...
 
@@ -174,16 +194,26 @@ This will open GitHub Pages....
 4. Under **Source**, click the dropdown displaying **Branch: None** and select the **master** branch. Click **Save**. 
 5. The page will then automatically refresh and inform you that the site is now ready to be published, as well as indicating the `https://` address to be used. 
 6. For reference purposes, a link to this newly-published site can be found in the **Pages** section of **Settings** (described above).
+</details>
 
 ### Forking the GitHub Repository:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
 It is possible to fork this GitHub repository to view and/or make changes without affecting the original. This is achieved by following these steps...
 
 1. [**Sign in** to your GitHub account](https://github.com/login) and locate the [relevant repository](https://github.com/CharlieMallon/RetroGamingHackathonTeam5).
 2. Click on **Fork**, located near the top right-hand corner of the repository page.
 3. You will now have a copy of this project's repository in your own GitHub account.
+</details>
 
 ### Making a local clone:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
 It is possible to copy the repository to your local machine so that you can fix merge conflicts, add or remove files and push larger commits without affecting the original project code. Cloning a repository pulls down a full copy of all the repo data that GitHub has at that point in time. See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for further information, and below for a brief summary...
 
@@ -211,7 +241,7 @@ _See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-ar
 Where code blocks/snippets/suggestions have been incorporated from external sources into this project's code, these have been noted through the use of comments. Beyond this, the developers made use of the following articles, workarounds and learning resources while building the site:
 <details>
   <summary>
-  click to view
+  <b>click to view</b>
   </summary>
 
 - ['Really helpful article/resource/tutorial #1'](#) (MDN Web Docs)
@@ -222,14 +252,14 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 ### Content:
 <details>
   <summary>
-  click to view
+  <b>click to view</b>
   </summary>
 </details>
 
 ### Media:
 <details>
   <summary>
-  click to view
+  <b>click to view</b>
   </summary>
 
 | [**Website section**] Media title/description  | Media format  | Credit  | Link to original media source(s)  | 
