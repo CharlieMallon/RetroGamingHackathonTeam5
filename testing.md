@@ -58,11 +58,11 @@
   <summary>
   <b>click to view</b>
   </summary>
-<details>
+</details>
 
 - #### Unfixed Bugs:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
-<details>
+</details>

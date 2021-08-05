@@ -1,7 +1,5 @@
 ![Code Institute logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-![Hackathon app header background](docs/images/screenshots/hackathon-app-header-bg.png)
-
 # Missile Command game
 
 ![Retro Gaming Hackathon header background](docs/images/screenshots/retro-gaming-hackathon-header-bg.jpeg)
@@ -28,7 +26,7 @@
   </summary>
 </details>
 
-## Project design
+## Project Design
 
 ### Colour scheme:
 <details>
@@ -67,7 +65,7 @@
 
 ## Features
 
-### Existing features:
+### Existing Features:
 
 - #### `nav`:
 
@@ -122,7 +120,7 @@
   </summary>
 </details>
 
-### Potential future features:
+### Potential Future Features:
 
 - #### Future feature X:
 <details>
@@ -172,7 +170,7 @@
 - [TinyJPG:](https://tinyjpg.com/) used for image compression
 - [PicResize:](https://picresize.com/) used to crop and resize images
 - [WebAIM (contrast checker):](https://webaim.org/resources/contrastchecker/) / [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) used to ensure site foreground and background colour contrasts meet [WCAG 2 accessibility requirements](https://webaim.org/articles/contrast/)
-- [Can I Use:](https://caniuse.com/) browser compatibility tables used to cross-reference the viability of implementing certain HTML5 elements, CSS3 properties, file formats and more
+- [Can I Use:](https://caniuse.com/) browser compatibility tables used to cross-reference the viability of implementing certain HTML5 elements, CSS3 properties, file formats etc.
 </details>
 
 ## Testing
@@ -200,7 +198,7 @@ This will open GitHub Pages....
 6. For reference purposes, a link to this newly-published site can be found in the **Pages** section of **Settings** (described above).
 </details>
 
-### Forking the GitHub Repository:
+### Forking the GitHub repository:
 <details>
   <summary>
   <b>click to view</b>
@@ -268,7 +266,11 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 
 | [**Website section**] Media title/description  | Media format  | Credit  | Link to original media source(s)  | 
 | :------------ |:--------------- |:-----|:---------------|
-| **`head`**         |                 |      |                |
+| **`header`**         |                 |      |                |
+| title/description goes here      | format category goes here       | [Bob Random Photographer](#)      | [Pexels](https://www.pexels.com/photo/calm-sea-under-blue-sky-4571251)      |
+| **`main`**         |                 |      |                |
+| title/description goes here      | format category goes here       | [Bob Random Photographer](#)      | [Pexels](https://www.pexels.com/photo/calm-sea-under-blue-sky-4571251)      |
+| **`footer`**         |                 |      |                |
 | title/description goes here      | format category goes here       | [Bob Random Photographer](#)      | [Pexels](https://www.pexels.com/photo/calm-sea-under-blue-sky-4571251)      |
 </details>
 
