@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: hsl(0, 0%, 94%);
+  background-color: hsl(284, 93%, 47%);
+  line-height: 1.5;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+abbr,
+acronym {
+  border-bottom: .0625rem dotted hsl(0, 0%, 40%);
+  cursor: help;
+}
+
+mark,
+ins {
+  background: hsl(54, 100%, 88%);
+  text-decoration: none;
+}
