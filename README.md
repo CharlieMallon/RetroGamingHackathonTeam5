@@ -1,5 +1,9 @@
 ![Code Institute logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+![Hackathon app header background](docs/images/screenshots/hackathon-app-header-bg.png)
+
+# Missile Command game
+
 ![Retro Gaming Hackathon header background](docs/images/screenshots/retro-gaming-hackathon-header-bg.jpeg)
 
 ## User Experience (UX)
@@ -125,21 +129,21 @@
   <summary>
   <b>click to view</b>
   </summary>
-<details>
+</details>
 
 - #### Future feature Y:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
-<details>
+</details>
 
 - #### Future feature Z:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
-<details>
+</details>
 
 ## Technologies Used
 
