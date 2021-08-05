@@ -1,104 +1,245 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Code Institute logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+![Retro Gaming Hackathon header background](docs/images/screenshots/retro-gaming-hackathon-header-bg.jpeg)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+## User Experience (UX)
 
-## Gitpod Reminders
+### User stories:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+#### User goals:
 
-`python3 -m http.server`
+  ##### General visitor to the site:
 
-A blue button should appear to click: _Make Public_,
+  ##### Returning site user:
 
-Another blue button should appear to click: _Open Browser_.
+#### Developer goals:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Project design
 
-A blue button should appear to click: _Make Public_,
+### Colour scheme:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
-Another blue button should appear to click: _Open Browser_.
+![Project colour scheme (Coolors palette) screenshot](https://raw.githubusercontent.com/loosenthedark/brew-barberista-landing-page/main/docs/images/screenshots/brew-barberista-colour-scheme.png)
+</details>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Typography:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
-To log into the Heroku toolbelt CLI:
+- #### Primary font...
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - **Family:** [Poppins](https://fonts.google.com/specimen/Poppins)
+  - **Weights:** 300, 400, 500
+  - **Fallback:** `sans-serif`
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- #### Secondary (Heading) font...
 
-------
+  - **Family:** [Lora](https://fonts.google.com/specimen/Lora)
+  - **Weights:** 600, 700
+  - **Fallback:** `serif`
+</details>
 
-## Release History
+### Wireframes:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Features
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Existing features:
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- #### `nav`:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - ##### Fixed Navigation Bar:
+  <details>
+    <summary>
+    <b>click to view</b>
+    </summary>
+  </details>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - ##### (Off-Canvas) Navigation Menu:
+  <details>
+    <summary>
+    <b>click to view</b>
+    </summary>
+  </details>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- #### `header`:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>  
+</details>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- #### `main`:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  - ###### `section` A:
+  <details>
+    <summary>
+    <b>click to view</b>
+    </summary>
+  </details>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  - ###### `section` B:
+  <details>
+    <summary>
+    <b>click to view</b>
+    </summary>
+  </details>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  - ###### `section` C:
+  <details>
+    <summary>
+    <b>click to view</b>
+    </summary>
+  </details>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- #### `footer`:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+</details>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Potential future features:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- #### Future feature X:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- #### Future feature Y:
 
-------
+- #### Future feature Z:
+</details>
 
-## FAQ about the uptime script
+## Technologies Used
 
-**Why have you added this script?**
+### Languages:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- [HTML5:](https://en.wikipedia.org/wiki/HTML5) used for structuring the site
+- [CSS3:](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) used for styling the site
+- [JavaScript:](https://en.wikipedia.org/wiki/JavaScript) used for site logic and web page behaviour
+</details>
 
-**How will this affect me?**
+### Frameworks/Libraries, APIs, Programmes and Tools:
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- [Google Fonts:](https://fonts.google.com/) used to import the Poppins and Lora fonts into the project's stylesheets
+- [Font Awesome v5.15.3:](https://fontawesome.com/) used to add appropriate and visually appealing site icons
+- [Visual Studio Code:](https://code.visualstudio.com/) used as the team's IDE for the project
+- [Git:](https://git-scm.com/) used for version control by utilising the Gitpod terminal to commit frequently to Git and push all commits to GitHub
+- [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
+- [TinyJPG:](https://tinyjpg.com/) used for image compression
+- [PicResize:](https://picresize.com/) used to crop and resize images
+- [WebAIM (contrast checker):](https://webaim.org/resources/contrastchecker/) / [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) used to ensure site foreground and background colour contrasts meet [WCAG 2 accessibility requirements](https://webaim.org/articles/contrast/)
+- [Can I Use:](https://caniuse.com/) browser compatibility tables used to cross-reference the viability of implementing certain HTML5 elements, CSS3 properties, file formats and more
+</details>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Testing
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Full project testing details can be found [here](testing.md)
 
-**So….?**
+## Deployment
+<details>
+  <summary>
+  click to view
+  </summary>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### GitHub Pages:
 
-**Can I opt out?**
+This project has been deployed to [GitHub Pages](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages). The deployment process carried out was as follows...
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+1. [**Sign in** to GitHub](https://github.com/login) and locate the [relevant repository](https://github.com/CharlieMallon/RetroGamingHackathonTeam5). If you do not have a GitHub account, you may create one [here](https://github.com/signup).
+2. At the top of the project repository page, select **Settings**. 
+3. On the Settings page, scroll down the menu flanking the left-hand side of the screen and select **Pages** near the bottom of the list of options.
+
+This will open GitHub Pages....
+
+4. Under **Source**, click the dropdown displaying **Branch: None** and select the **master** branch. Click **Save**. 
+5. The page will then automatically refresh and inform you that the site is now ready to be published, as well as indicating the `https://` address to be used. 
+6. For reference purposes, a link to this newly-published site can be found in the **Pages** section of **Settings** (described above).
+
+### Forking the GitHub Repository:
+
+It is possible to fork this GitHub repository to view and/or make changes without affecting the original. This is achieved by following these steps...
+
+1. [**Sign in** to your GitHub account](https://github.com/login) and locate the [relevant repository](https://github.com/CharlieMallon/RetroGamingHackathonTeam5).
+2. Click on **Fork**, located near the top right-hand corner of the repository page.
+3. You will now have a copy of this project's repository in your own GitHub account.
+
+### Making a local clone:
+
+It is possible to copy the repository to your local machine so that you can fix merge conflicts, add or remove files and push larger commits without affecting the original project code. Cloning a repository pulls down a full copy of all the repo data that GitHub has at that point in time. See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) for further information, and below for a brief summary...
+
+1. [**Sign in** to your GitHub account](https://github.com/login) and locate the [relevant repository](https://github.com/CharlieMallon/RetroGamingHackathonTeam5).
+2. Click on the **Code** dropdown next to the green **Gitpod** button. This will reveal the **Clone** option.
+3. In order to clone the repository using `HTTPS`, select **HTTPS** and copy the link shown (there is a copy button to the right of the URL).
+4. Next, open **Git Bash** (see [here](https://git-scm.com/downloads) for an overview of download options, if required).
+5. Change the current working directory on your local machine to the location where you want the cloning to be made.
+6. Type `git clone` into your IDE terminal followed by the URL you copied in Step 3 above, i.e.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+https://github.com/CharlieMallon/RetroGamingHackathonTeam5.git
 ```
 
-**Anything more?**
+7. Press **Enter**. 
+8. Your local clone has now been created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+_See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories) for more information on all of the above processes._
+</details>
 
----
+## Credits
 
-Happy coding!
+### Code:
+
+Where code blocks/snippets/suggestions have been incorporated from external sources into this project's code, these have been noted through the use of comments. Beyond this, the developers made use of the following articles, workarounds and learning resources while building the site:
+<details>
+  <summary>
+  click to view
+  </summary>
+
+- ['Really helpful article/resource/tutorial #1'](#) (MDN Web Docs)
+- ['Really helpful article/resource/tutorial #2'](#) (Stack Overflow)
+- ['Really helpful article/resource/tutorial #3'](#) (CSS-Tricks)
+</details>
+
+### Content:
+<details>
+  <summary>
+  click to view
+  </summary>
+</details>
+
+### Media:
+<details>
+  <summary>
+  click to view
+  </summary>
+
+| [**Website section**] Media title/description  | Media format  | Credit  | Link to original media source(s)  | 
+| :------------ |:--------------- |:-----|:---------------|
+| **`head`**         |                 |      |                |
+| title/description goes here      | format category goes here       | [Bob Random Photographer](#)      | [Pexels](https://www.pexels.com/photo/calm-sea-under-blue-sky-4571251)      |
+</details>
+
+### Acknowledgments:
+
+## Notice
+
+This site has been created for development purposes only.
