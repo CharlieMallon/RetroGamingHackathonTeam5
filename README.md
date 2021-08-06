@@ -12,9 +12,15 @@
 <details>
   <summary>
   <b>click to view</b>
+
   </summary>
 
   ##### General visitor to the site:
+   1. As a player, I want to play as long as i want, no time constraint.
+   2. As a player, I want to play with easy clicks on desktop.
+   3. As a player, I want to upgrade if I reach a certain level of game.
+   4. As a player, i want to get powerups at different level of the game.
+   5. As a player, I want to see my progress as a score.
 
   ##### Returning site user:
 </details>
@@ -24,6 +30,12 @@
   <summary>
   <b>click to view</b>
   </summary>
+  
+  1. As a game developer, I want to create a user friendly and easy to play game.
+  2. As a developer, I want to give different levels of difficulties in the game.
+  3. As a developer, I want to give a time counter for the players to see their progress.
+  4. As a developer, I want to give upgrades to the players, when they reach a certain level.
+  5. As a developer, I want to give powerup option to the players.
 </details>
 
 ## Project Design
