@@ -61,6 +61,8 @@
   <summary>
   <b>click to view</b>
   </summary>
+
+  ![GDD design wireframe](GDD/missiles.jpg)
 </details>
 
 ## Features
