@@ -1,13 +1,10 @@
 // load in kaboom variables from kaboom.js
 import kaboom from './kaboom.js'
-// load 
+// load in game functions
 import shooting from "./shooting.js"
 import ufoHeavy from './ufoHeavy.js'
 import ufoLight from './ufoLight.js'
 import background from './background.js'
-
-// declare main (global) variables
-const TIME_REMAINING = 30
 
 // Start Screen
 scene('start', () => {
@@ -26,44 +23,11 @@ scene('start', () => {
 
 // Main Game Scene
 scene('main', (args = {}) => {
-    // gets all the content from the shooting function in the shooting.js file
+    // gets all the content from the game functions
     background();
     shooting();
     ufoHeavy();
     ufoLight();
-    // scoreboard element
-    const score = add([
-        text('0'),
-        color(rgb(0, 1, 0)),
-        pos(width() / 2 + 100, height() / 2),
-        layer('ui'),
-        scale(3),
-        {
-            value: 0,
-        }
-    ]);
-    // countdown timer element
-    const countdown = add([
-        text('0'),
-        color(rgb(1, 0, 0)),
-        pos(width() / 2, height() / 2),
-        scale(2),
-        layer('ui'),
-        {
-            count: TIME_REMAINING,
-        },
-    ]);
-    
-    // all events are bound to a scene
-    
-    // Start the countdown timer
-    countdown.action(() => {
-        countdown.count -= dt();
-        countdown.text = countdown.count.toFixed(2);
-        // if (countdown.count <= 0) {
-        //     go('lose', { score: score.value })
-        // }
-    });
 });
 
 // Start the game on loading
