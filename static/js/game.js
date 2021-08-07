@@ -1,3 +1,4 @@
+import shooting from "./shooting.js";
 kaboom({
 	...{
 		fullscreen: false,
@@ -34,17 +35,14 @@ scene('start', () => {
 
 // Main Game Scene
 scene('main', (args = {}) => {
+	// gets all the content from the shooting function in the shooting.js file
+	shooting();
 	layers(['bg', 'game', 'ui'], 'game');
 	// all objs are bound to a scene
 	add([sprite('sky'), layer('bg'), pos(0, 0), scale(1)]);
 	add([sprite('ground'), layer('bg'), pos(0, 226), scale(1)]);
 	add([sprite('upgrade'), layer('bg'), pos(0, 350)]);
 	// all events are bound to a scene
-	// gets the position of the mouse when the user clicks on the screen
-	const position = mouseClick(() => {
-		const mpos = mousePos();
-		console.log(mpos);
-	});
 });
 
 // Start the game on loading
