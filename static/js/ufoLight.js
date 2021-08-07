@@ -2,25 +2,23 @@
 import kaboom from './kaboom.js'
 
 // declare variables
-const upBound = 40;
-const lowBound = height() - 12;
+const upBound = 50;
+const lowBound = 100;
+const light = "ufoLight"
 
 loadSprite("ufoLight", "placeholders/light_ufo.png");
 const ufoLight = () => {
-    // obj spawn
-    loop(0.4, () => {
-        const obj = choose([
-            "ufoLight"
-        ]);
+    // spawn light UFO
+    loop(0.75, () => {
         add([
-            sprite(obj),
-            "obj",
-            obj,
+            sprite(light),
+            "light",
+            light,
             pos(width(), rand(lowBound, upBound)),
-            scale(.5)
+            scale(.4)
         ]);
     });
-    action("obj", (o) => {
+    action("light", (o) => {
         o.move(-90 * 1, 0);
         if (o.pos.x <= -width()) {
             destroy(o);
