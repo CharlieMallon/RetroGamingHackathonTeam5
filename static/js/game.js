@@ -2,6 +2,7 @@
 import kaboom from './kaboom.js'
 // load 
 import shooting from "./shooting.js";
+import ufoHeavy from './ufoHeavy.js'
 
 // load background sprites (Main Game)
 loadSprite('sky', 'placeholders/screen/sky_area.png');
@@ -13,8 +14,6 @@ loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
 
 // declare main (global) variables
 const TIME_REMAINING = 30
-const upBound = 40;
-const lowBound = height() - 12;
 
 // Start Screen
 scene('start', () => {
@@ -35,6 +34,7 @@ scene('start', () => {
 scene('main', (args = {}) => {
     // gets all the content from the shooting function in the shooting.js file
     shooting();
+    ufoHeavy();
     layers(['bg', 'game', 'ui'], 'game');
     // scoreboard element
     const score = add([
@@ -63,25 +63,7 @@ scene('main', (args = {}) => {
     add([sprite('ground'), layer('bg'), pos(0, 226), scale(1)]);
     add([sprite('upgrade'), layer('bg'), pos(0, 350)]);
     // all events are bound to a scene
-    // obj spawn
-    loop(0.4, () => {
-        const obj = choose([
-            "ufoHeavy"
-        ]);
-        add([
-            sprite(obj),
-            "obj",
-            obj,
-            pos(width(), rand(lowBound, upBound)),
-            scale(.5)
-        ]);
-    });
-    action("obj", (o) => {
-        o.move(-90 * 1, 0);
-        if (o.pos.x <= -width()) {
-            destroy(o);
-        }
-    });
+    
     // Start the countdown timer
     countdown.action(() => {
         countdown.count -= dt();
