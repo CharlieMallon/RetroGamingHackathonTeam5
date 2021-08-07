@@ -261,7 +261,7 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
   </summary>
 
 - ['Easy JavaScript Game Development with Kaboom.js'](https://www.youtube.com/watch?v=4OaHB0JbJDI) (freeCodeCamp)
-- ['Really helpful article/resource/tutorial #2'](#) (Stack Overflow)
+- ['5 Tips for Getting Started with Kaboom.js'](https://blog.ourcade.co/posts/2021/5-tips-getting-started-kaboom-js/) (Ourcade)
 - ['Really helpful article/resource/tutorial #3'](#) (CSS-Tricks)
 </details>
 
