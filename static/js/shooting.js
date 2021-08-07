@@ -26,9 +26,6 @@ const shooting = () => {
         
             missile.move(vec2(move_vec_norm.x * MISSLE_SPEED, move_vec_norm.y * MISSLE_SPEED))
           
-            // render(() => {
-            //     drawLine(SHOOT_ORIGIN, missile.pos)
-            // });
             render(() => {
                 if (missile.pos.y > mPos.y){
                     drawLine(SHOOT_ORIGIN, missile.pos)
@@ -40,11 +37,7 @@ const shooting = () => {
                 destroy(missile)
 
                 // Instantiate explosion here
-                // destroy the line
-            }else{
-                
             }
-            console.log("running")
         })
 
         
