@@ -4,7 +4,7 @@
 
 ![Retro Gaming Hackathon header background](docs/images/screenshots/retro-gaming-hackathon-header-bg.jpeg)
 
-#### [Live link to deployed project](https://charliemallon.github.io/RetroGamingHackathonTeam5/)
+#### [Live link to deployed project](https://charliemallon.github.io/RetroGamingHackathonTeam5/) (hosted on GitHub Pages)
 
 ## User Experience (UX)
 
@@ -178,6 +178,7 @@
   <b>click to view</b>
   </summary>
 
+- [Kaboom.js v0.5.0:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
 - [Google Fonts:](https://fonts.google.com/) used to import the Poppins and Lora fonts into the project's stylesheets
 - [Font Awesome v5.15.3:](https://fontawesome.com/) used to add appropriate and visually appealing site icons
 - [Visual Studio Code:](https://code.visualstudio.com/) used as the team's IDE for the project
@@ -256,7 +257,7 @@ _See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-ar
 
 ### Code:
 
-![Kaboom.js logo](static/images/kaboom-logo.jpeg)
+![Kaboom.js logo](static/images/kaboom-logo.jpg)
 
 Where code blocks/snippets/suggestions have been incorporated from external sources into this project's code, these have been noted through the use of comments. Beyond this, the developers made use of the following articles, workarounds and learning resources while building the site:
 <details>
