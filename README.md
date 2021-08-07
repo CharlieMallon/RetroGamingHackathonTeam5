@@ -260,7 +260,7 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
   <b>click to view</b>
   </summary>
 
-- ['Really helpful article/resource/tutorial #1'](#) (MDN Web Docs)
+- ['Easy JavaScript Game Development with Kaboom.js'](https://www.youtube.com/watch?v=4OaHB0JbJDI) (freeCodeCamp)
 - ['Really helpful article/resource/tutorial #2'](#) (Stack Overflow)
 - ['Really helpful article/resource/tutorial #3'](#) (CSS-Tricks)
 </details>
