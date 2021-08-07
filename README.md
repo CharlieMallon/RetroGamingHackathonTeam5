@@ -1,4 +1,4 @@
-![Code Institute logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Code Institute logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png) ![Kaboom.js logo](static/images/kaboom-logo.jpeg)
 
 # Missile Command game
 
@@ -260,9 +260,10 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
   <b>click to view</b>
   </summary>
 
+- [Kaboom.js docs](https://kaboomjs.com/)
 - ['Easy JavaScript Game Development with Kaboom.js'](https://www.youtube.com/watch?v=4OaHB0JbJDI) (freeCodeCamp)
 - ['5 Tips for Getting Started with Kaboom.js'](https://blog.ourcade.co/posts/2021/5-tips-getting-started-kaboom-js/) (Ourcade)
-- ['Really helpful article/resource/tutorial #3'](#) (CSS-Tricks)
+
 </details>
 
 ### Content:
