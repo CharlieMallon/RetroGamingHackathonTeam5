@@ -1,8 +1,10 @@
 ![Code Institute logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+![Retro Gaming Hackathon header background](docs/images/screenshots/retro-gaming-hackathon-header-bg.jpeg)
+
 # Lunar Conflicts game
 
-![Retro Gaming Hackathon header background](docs/images/screenshots/retro-gaming-hackathon-header-bg.jpeg)
+![Insert Coin arcade machine mockup](docs/images/screenshots/insert-coin.jpeg)
 
 #### [Live link to deployed project](https://charliemallon.github.io/RetroGamingHackathonTeam5/) (hosted on GitHub Pages)
 
@@ -257,7 +259,7 @@ _See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-ar
 
 ### Code:
 
-![Kaboom.js logo](static/images/kaboom-logo.jpg)
+![Kaboom.js logo](docs/images/screenshots/kaboom-logo.jpg)
 
 Where code blocks/snippets/suggestions have been incorporated from external sources into this project's code, these have been noted through the use of comments. Beyond this, the developers made use of the following articles, workarounds and learning resources while building the site:
 <details>
