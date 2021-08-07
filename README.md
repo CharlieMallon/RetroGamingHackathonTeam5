@@ -178,6 +178,7 @@
   <b>click to view</b>
   </summary>
 
+- [Kaboom.js v0.5.0:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
 - [Google Fonts:](https://fonts.google.com/) used to import the Poppins and Lora fonts into the project's stylesheets
 - [Font Awesome v5.15.3:](https://fontawesome.com/) used to add appropriate and visually appealing site icons
 - [Visual Studio Code:](https://code.visualstudio.com/) used as the team's IDE for the project
