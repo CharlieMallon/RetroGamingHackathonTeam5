@@ -4,7 +4,7 @@
 
 ![Retro Gaming Hackathon header background](docs/images/screenshots/retro-gaming-hackathon-header-bg.jpeg)
 
-#### [Live link to deployed project](https://charliemallon.github.io/RetroGamingHackathonTeam5/)
+#### [Live link to deployed project](https://charliemallon.github.io/RetroGamingHackathonTeam5/) (hosted on GitHub Pages)
 
 ## User Experience (UX)
 
@@ -256,7 +256,7 @@ _See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-ar
 
 ### Code:
 
-![Kaboom.js logo](static/images/kaboom-logo.jpeg)
+![Kaboom.js logo](static/images/kaboom-logo.jpg)
 
 Where code blocks/snippets/suggestions have been incorporated from external sources into this project's code, these have been noted through the use of comments. Beyond this, the developers made use of the following articles, workarounds and learning resources while building the site:
 <details>
