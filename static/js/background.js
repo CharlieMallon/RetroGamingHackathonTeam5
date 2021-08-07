@@ -2,16 +2,17 @@
 import kaboom from './kaboom.js'
 
 // load background sprites (Main Game)
-loadSprite('sky', 'placeholders/screen/sky_area.png');
-loadSprite('ground', 'placeholders/screen/ground_area.png');
-loadSprite('upgrade', 'placeholders/screen/upgrade_area.png');
+loadSprite('sky', 'sprites/backgrounds/air.png');
+loadSprite('ground', 'sprites/backgrounds/ground.png');
+loadSprite('upgrade', 'sprites/backgrounds/upgrade_area.png');
 
 const background = () => {
     layers(['bg', 'game', 'ui'], 'game');
     // all objs are bound to a scene
-    add([sprite('sky'), layer('bg'), pos(0, 0), scale(1)]);
-    add([sprite('ground'), layer('bg'), pos(0, 226), scale(1)]);
-    add([sprite('upgrade'), layer('bg'), pos(0, 350)]);
+    var game_scale = 1
+    add([sprite('sky'), layer('bg'), pos(0, 0), scale(game_scale)]);
+    add([sprite('ground'), layer('bg'), pos(0, 226), scale(game_scale)]);
+    add([sprite('upgrade'), layer('bg'), pos(0, 350), scale(game_scale)]);
 };
 
 export default background
