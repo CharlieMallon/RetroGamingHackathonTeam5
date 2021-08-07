@@ -46,9 +46,9 @@ const background = () => {
     countdown.action(() => {
         countdown.count -= dt();
         countdown.text = countdown.count.toFixed(2);
-        // if (countdown.count <= 0) {
-        //     go('lose', { score: score.value })
-        // }
+        if (countdown.count <= 0) {
+            go('lose', { score: score.value })
+        }
     });
 };
 

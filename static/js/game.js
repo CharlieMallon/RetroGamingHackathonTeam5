@@ -30,5 +30,18 @@ scene('main', (args = {}) => {
     ufoLight();
 });
 
+scene("lose", ({ score }) => {
+    add([text('Lunar Conflicts', 32), pos(275, 100), origin('center')]);
+	add([
+		text("Score: " + score, 24),
+		origin("center"),
+		pos(width() / 2, height() / 2),
+	]);
+    add([text('press space to restart', 12), pos(275, 300), origin('center')]);
+    keyPress('space', () => {
+        go('main');
+    });
+});
+
 // Start the game on loading
 start('start');
