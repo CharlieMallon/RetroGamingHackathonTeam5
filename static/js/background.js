@@ -7,7 +7,7 @@ loadSprite('ground', 'sprites/backgrounds/ground.png');
 loadSprite('upgrade', 'sprites/backgrounds/upgrade_area.png');
 
 // declare main (global) variables
-const TIME_REMAINING = 30
+const TIME_ELAPSED = 0
 
 const background = () => {
     // layers of the game
@@ -30,23 +30,23 @@ const background = () => {
         }
     ]);
 
-    // countdown timer element
-    const countdown = add([
+    // game timer element
+    const timer = add([
         text('0'),
         color(rgb(1, 0, 0)),
         pos(width() / 2, height() / 2),
         scale(2),
         layer('ui'),
         {
-            count: TIME_REMAINING,
+            count: TIME_ELAPSED,
         },
     ]);
 
-    // Start the countdown timer
-    countdown.action(() => {
-        countdown.count -= dt();
-        countdown.text = countdown.count.toFixed(2);
-        if (countdown.count <= 0) {
+    // Start the game timer
+    timer.action(() => {
+        timer.count += dt();
+        timer.text = timer.count.toFixed(2);
+        if (timer.count > 30) {
             go('lose', { score: score.value })
         }
     });
