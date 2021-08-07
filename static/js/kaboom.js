@@ -5,7 +5,7 @@ export const k = kaboom({
     scale: 2,
     clearColor: [0, 0, 0, 1],
     startScene: 'Start',
-    version: '0.5.0',
+    version: '0.5.1',
 })
 
 export default k

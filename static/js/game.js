@@ -1,4 +1,5 @@
 import shooting from "./shooting.js";
+
 kaboom({
     ... {
         fullscreen: false,
@@ -7,7 +8,7 @@ kaboom({
         scale: 2,
         clearColor: [0, 0, 0, 1],
         startScene: 'Start',
-        version: '0.5.0',
+        version: '0.5.1',
     },
     global: true,
     plugins: [peditPlugin, asepritePlugin, kbmspritePlugin],
@@ -18,8 +19,13 @@ loadSprite('sky', 'placeholders/screen/sky_area.png');
 loadSprite('ground', 'placeholders/screen/ground_area.png');
 loadSprite('upgrade', 'placeholders/screen/upgrade_area.png');
 
+// load heavy ufo sprite
+loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
+
 // declare main (global) variables
 const TIME_REMAINING = 30
+const upBound = 40;
+const lowBound = height() - 12;
 
 // Start Screen
 scene('start', () => {
@@ -68,7 +74,25 @@ scene('main', (args = {}) => {
     add([sprite('ground'), layer('bg'), pos(0, 226), scale(1)]);
     add([sprite('upgrade'), layer('bg'), pos(0, 350)]);
     // all events are bound to a scene
-
+    // obj spawn
+    loop(0.4, () => {
+        const obj = choose([
+            "ufoHeavy"
+        ]);
+        add([
+            sprite(obj),
+            "obj",
+            obj,
+            pos(width(), rand(lowBound, upBound)),
+            scale(.5)
+        ]);
+    });
+    action("obj", (o) => {
+        o.move(-90 * 1, 0);
+        if (o.pos.x <= -width()) {
+            destroy(o);
+        }
+    });
     // Start the countdown timer
     countdown.action(() => {
         countdown.count -= dt();
