@@ -42,16 +42,16 @@ scene('main', (args = {}) => {
     shooting();
     layers(['bg', 'game', 'ui'], 'game');
     // scoreboard element
-    // const score = add([
-    //     text('0'),
-    //     color(rgb(0, 1, 0)),
-    //     pos(width() - 64, 6),
-    //     layer('ui'),
-    //     scale(3),
-    //     {
-    //         value: 0,
-    //     }
-    // ])
+    const score = add([
+        text('0'),
+        color(rgb(0, 1, 0)),
+        pos(width() / 2 + 100, height() / 2),
+        layer('ui'),
+        scale(3),
+        {
+            value: 0,
+        }
+    ]);
     // countdown timer element
     const countdown = add([
         text('0'),
