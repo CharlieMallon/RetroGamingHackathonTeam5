@@ -22,7 +22,7 @@ scene('start', () => {
 });
 
 // Main Game Scene
-scene('main', (args = {}) => {
+scene('main', () => {
     // gets all the content from the game functions
     background();
     shooting();

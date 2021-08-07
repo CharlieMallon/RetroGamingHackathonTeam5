@@ -6,7 +6,9 @@ const upBound = 5;
 const lowBound = 30;
 const heavy = "ufoHeavy"
 
+// load in sprite
 loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
+
 const ufoHeavy = () => {
     // spawn heavy UFO
     loop(1, () => {
@@ -18,11 +20,9 @@ const ufoHeavy = () => {
             scale(.4)
         ]);
     });
+
     action("heavy", (o) => {
         o.move(-90 * 1, 0);
-        if (o.pos.x <= -width()) {
-            destroy(o);
-        }
     });
 };
 
