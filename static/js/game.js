@@ -1,18 +1,7 @@
+// load in kaboom variables from kaboom.js
+import kaboom from './kaboom.js'
+// load 
 import shooting from "./shooting.js";
-
-kaboom({
-    ... {
-        fullscreen: false,
-        width: 550,
-        height: 400,
-        scale: 2,
-        clearColor: [0, 0, 0, 1],
-        startScene: 'Start',
-        version: '0.5.1',
-    },
-    global: true,
-    plugins: [peditPlugin, asepritePlugin, kbmspritePlugin],
-});
 
 // load background sprites (Main Game)
 loadSprite('sky', 'placeholders/screen/sky_area.png');
