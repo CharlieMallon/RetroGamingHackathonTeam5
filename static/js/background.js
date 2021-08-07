@@ -9,10 +9,10 @@ loadSprite('upgrade', 'sprites/backgrounds/upgrade_area.png');
 const background = () => {
     layers(['bg', 'game', 'ui'], 'game');
     // all objs are bound to a scene
-    var game_scale = 1
+    var game_scale = .69
     add([sprite('sky'), layer('bg'), pos(0, 0), scale(game_scale)]);
     add([sprite('ground'), layer('bg'), pos(0, 226), scale(game_scale)]);
-    add([sprite('upgrade'), layer('bg'), pos(0, 350), scale(game_scale)]);
+    add([sprite('upgrade'), layer('bg'), pos(0, 340), scale(game_scale)]);
 };
 
 export default background
