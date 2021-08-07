@@ -47,6 +47,14 @@ ins {
   text-decoration: none;
 }
 
+/* Canvas */
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  max-height: 100vh;
+}
+
 /* ------------------------------------------------------------------------- footer ---- */
 
 footer {
