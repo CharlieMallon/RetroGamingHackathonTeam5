@@ -1,16 +1,14 @@
 // load in kaboom variables from kaboom.js
 import kaboom from './kaboom.js'
 // load 
-import shooting from "./shooting.js";
+import shooting from "./shooting.js"
 import ufoHeavy from './ufoHeavy.js'
+import ufoLight from './ufoLight.js'
 
 // load background sprites (Main Game)
 loadSprite('sky', 'placeholders/screen/sky_area.png');
 loadSprite('ground', 'placeholders/screen/ground_area.png');
 loadSprite('upgrade', 'placeholders/screen/upgrade_area.png');
-
-// load heavy ufo sprite
-loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
 
 // declare main (global) variables
 const TIME_REMAINING = 30
@@ -35,6 +33,7 @@ scene('main', (args = {}) => {
     // gets all the content from the shooting function in the shooting.js file
     shooting();
     ufoHeavy();
+    ufoLight();
     layers(['bg', 'game', 'ui'], 'game');
     // scoreboard element
     const score = add([
