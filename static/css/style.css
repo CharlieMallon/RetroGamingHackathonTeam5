@@ -46,3 +46,37 @@ ins {
   background: hsl(54, 100%, 88%);
   text-decoration: none;
 }
+
+/* ------------------------------------------------------------------------- footer ---- */
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: auto;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-top: 15px;
+}
+
+footer ul {
+  list-style: none;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+footer a:hover {
+  color: yellowgreen;
+}
+
