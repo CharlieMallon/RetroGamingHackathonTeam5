@@ -4,11 +4,7 @@ import kaboom from './kaboom.js'
 import shooting from "./shooting.js"
 import ufoHeavy from './ufoHeavy.js'
 import ufoLight from './ufoLight.js'
-
-// load background sprites (Main Game)
-loadSprite('sky', 'placeholders/screen/sky_area.png');
-loadSprite('ground', 'placeholders/screen/ground_area.png');
-loadSprite('upgrade', 'placeholders/screen/upgrade_area.png');
+import background from './background.js'
 
 // declare main (global) variables
 const TIME_REMAINING = 30
@@ -31,10 +27,10 @@ scene('start', () => {
 // Main Game Scene
 scene('main', (args = {}) => {
     // gets all the content from the shooting function in the shooting.js file
+    background();
     shooting();
     ufoHeavy();
     ufoLight();
-    layers(['bg', 'game', 'ui'], 'game');
     // scoreboard element
     const score = add([
         text('0'),
@@ -57,10 +53,7 @@ scene('main', (args = {}) => {
             count: TIME_REMAINING,
         },
     ]);
-    // all objs are bound to a scene
-    add([sprite('sky'), layer('bg'), pos(0, 0), scale(1)]);
-    add([sprite('ground'), layer('bg'), pos(0, 226), scale(1)]);
-    add([sprite('upgrade'), layer('bg'), pos(0, 350)]);
+    
     // all events are bound to a scene
     
     // Start the countdown timer

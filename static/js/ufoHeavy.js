@@ -1,7 +1,7 @@
 // load in kaboom variables from kaboom.js
 import kaboom from './kaboom.js'
 
-// declare varables
+// declare variables
 const upBound = 40;
 const lowBound = height() - 12;
 
