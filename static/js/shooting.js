@@ -1,6 +1,8 @@
+// Work in progress
+
 const shooting = () => {
     // shooting specifications
-    const MISSLE_SPEED = 300;
+    const MISSLE_SPEED = 1;
     // loads a sprite
     loadSprite('mark', 'sprites/mark.png');
 
@@ -12,7 +14,11 @@ const shooting = () => {
         add([sprite('mark'), layer('ui'), pos(250, 200), "mark"]);
         // makes the sprite move
         const move = action('mark', (m) => {
-            m.move(0, -MISSLE_SPEED);
+            var x = mpos.x - 250;
+            var y = mpos.y - 250;
+            // var nrom = new Vec2(x, y)
+            m.move(vec2(10, -10));
+            // m.move(mpos.x, mpos.y);
         });
 	});    
 }
