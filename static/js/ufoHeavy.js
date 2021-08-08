@@ -28,7 +28,7 @@ const ufoHeavy = () => {
     const lowBound = 30;
     const heavy = "ufoHeavy";
     const DROP_ORIGIN = vec2(275, 0);
-    const BOMB_SPEED = 50;
+    const BOMB_SPEED = 60;
 
     // spawn heavy UFO
     var randInt = 0;
