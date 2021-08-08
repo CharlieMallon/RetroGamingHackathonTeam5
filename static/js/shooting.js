@@ -5,9 +5,10 @@ loadSprite('explosion', 'sprites/explosion.png')
 
 const SHOOT_ORIGIN = vec2(275, 300);
 
-var explosionRadius = 1;
-var missileSpeed = 150;
-var shootFrequency = 1000;
+var baseExplosionRadius = 0.5;
+var explosionRadius = baseExplosionRadius;
+var missileSpeed = 100;
+var shootFrequency = 1500;
 
 var millisLast = 0;
 var millis = 0;
@@ -15,7 +16,7 @@ var millis = 0;
 var salvagedParts = 0;
 var explosionDuration = 1000;
 
-var testing = false;
+var testing = true;
 
 export function upgradeSpeed(n){
     missileSpeed = n

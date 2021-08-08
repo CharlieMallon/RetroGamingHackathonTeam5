@@ -1,17 +1,20 @@
+import shooting, { getSalvagedParts, removeSalvagedParts, upgradeExplosion, upgradeFrequency, upgradeSpeed } from "./shooting.js"
+
 loadSprite("explosion_upgrade", "sprites/upgrades/explosion.png");
 loadSprite("speed_upgrade", "sprites/upgrades/speed.png");
 loadSprite("frequency_upgrade", "sprites/upgrades/frequency.png");
 
-class Upgrade{
-    constructor (name, current_level, cost, values){
-        this.name = name;
-        this.current_level = current_level;
-        this.cost = cost;
-        this.values = values;
-    }
-}
-
 const upgrades = () => {
+
+    var currentExplosionLevel = 0;
+    var explosionStats = [0.8, 1.2, 1.5]
+
+    var currentSpeedLevel = 0;
+    var speedStats = [150, 180, 250]
+
+    var currentFrequencyLevel = 0;
+    var frequencyStats = [1200, 500, 200]
+
     var upgradePos = [
         vec2 (50, 375),
         vec2 (110, 375),
@@ -59,7 +62,36 @@ const upgrades = () => {
             var buttonAreaY = vec2(upgradePos[i].y - buttonSkin, upgradePos[i].y + buttonSkin);
             if (mPos.x > buttonAreaX.x && mPos.x < buttonAreaX.y){
                 if (mPos.y > buttonAreaY.x && mPos.y < buttonAreaY.y){
+                   var salvaged_parts = getSalvagedParts()
                     console.log("Upgrade " + i + " clicked!")
+                    if (i==0){
+                        if (currentExplosionLevel < explosionStats.length ){
+                            var upgradeCost = currentExplosionLevel + 1
+                            if (salvaged_parts >= upgradeCost){
+                                removeSalvagedParts(upgradeCost)
+                                currentExplosionLevel ++;
+                                upgradeExplosion(explosionStats[currentExplosionLevel-1])
+                            }
+                        }
+                    }
+                    if (i==1){
+                        if (currentSpeedLevel < speedStats.length){
+                            var upgradeCost = currentSpeedLevel + 1
+                                if (salvaged_parts >= upgradeCost){
+                                currentSpeedLevel ++;
+                                upgradeSpeed(speedStats[currentSpeedLevel-1])
+                            }
+                        }
+                    }
+                    if (i==2){
+                        if (currentFrequencyLevel < frequencyStats.length){
+                            var upgradeCost = currentFrequencyLevel + 1
+                                if (salvaged_parts >= upgradeCost){
+                                currentFrequencyLevel ++;
+                                upgradeFrequency(frequencyStats[currentFrequencyLevel-1])
+                            }
+                        }
+                    }
                 }
             }
         }
