@@ -2,6 +2,15 @@ loadSprite("explosion_upgrade", "sprites/upgrades/explosion.png");
 loadSprite("speed_upgrade", "sprites/upgrades/speed.png");
 loadSprite("frequency_upgrade", "sprites/upgrades/frequency.png");
 
+class Upgrade{
+    constructor (name, current_level, cost, values){
+        this.name = name;
+        this.current_level = current_level;
+        this.cost = cost;
+        this.values = values;
+    }
+}
+
 const upgrades = () => {
     var upgradePos = [
         vec2 (50, 375),
@@ -39,17 +48,19 @@ const upgrades = () => {
        
     ]);
 
+
+
     const upgradeClick = mouseClick(() => {
         var mPos = mousePos()
         var buttonSkin = 20
 
-
-        var buttonAreaX = vec2(upgradePos[0].x - buttonSkin, upgradePos[0].x + buttonSkin);
-        var buttonAreaY = vec2(upgradePos[0].y - buttonSkin, upgradePos[0].y + buttonSkin);
-     
-        if (mPos.x > buttonAreaX.x && mPos.x < buttonAreaX.y){
-            if (mPos.y > buttonAreaY.x && mPos.y < buttonAreaY.y){
-                console.log("Upgrade 0 clicked!")
+        for (var i = 0; i < 3; i++){
+            var buttonAreaX = vec2(upgradePos[i].x - buttonSkin, upgradePos[i].x + buttonSkin);
+            var buttonAreaY = vec2(upgradePos[i].y - buttonSkin, upgradePos[i].y + buttonSkin);
+            if (mPos.x > buttonAreaX.x && mPos.x < buttonAreaX.y){
+                if (mPos.y > buttonAreaY.x && mPos.y < buttonAreaY.y){
+                    console.log("Upgrade " + i + " clicked!")
+                }
             }
         }
     });    
