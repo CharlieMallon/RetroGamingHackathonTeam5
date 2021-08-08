@@ -7,20 +7,18 @@ loadSprite('explosion', 'sprites/explosion.png')
 loadSound("explode", 'music/explosion.wav')
 loadSound("shooting", 'music/shooting.wav')
 
+//Declare variables
 const SHOOT_ORIGIN = vec2(275, 300);
 
-var baseExplosionRadius = 0.5;
-var explosionRadius = baseExplosionRadius;
-var missileSpeed = 150;
-var shootFrequency = 1000;
-
-var millisLast = 0;
-var millis = 0;
-
-var salvagedParts = 100;
-var explosionDuration = 1000;
-
-var testing = true;
+var baseExplosionRadius
+var explosionRadius
+var missileSpeed
+var shootFrequency
+var millisLast
+var millis
+var salvagedParts
+var explosionDuration
+var testing
 
 export function upgradeSpeed(n){
     missileSpeed = n
@@ -45,6 +43,18 @@ export function removeSalvagedParts(n){
 }
 
 const shooting = () => {
+    
+    baseExplosionRadius = 0.5;
+    explosionRadius = baseExplosionRadius;
+    missileSpeed = 150;
+    shootFrequency = 1000;
+    millisLast = 0;
+    millis = 0;
+    salvagedParts = 100;
+    explosionDuration = 1000;
+    testing = true;
+
+    console.log("shooting.js >> shooting >> ")
     const position = mouseClick(() => {
         millis = Date.now() - millisLast;
         if (millis > shootFrequency){
@@ -124,7 +134,7 @@ const shooting = () => {
                 })
             }
     }else{
-        console.log("cant shoot")
+        // console.log("cant shoot")
     }
 	});    
 }

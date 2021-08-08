@@ -3,13 +3,6 @@ import kaboom from './kaboom.js'
 import { getRemainingCities } from './cities.js'
 import { destroyCity } from './cities.js';
 
-// declare variables
-const upBound = 5;
-const lowBound = 30;
-const heavy = "ufoHeavy";
-const DROP_ORIGIN = vec2(275, 0);
-const BOMB_SPEED = 30;
-
 // load in sprite
 loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
 loadSprite("explosion", "sprites/explosion.png");
@@ -29,14 +22,14 @@ var ufoPos = [
 
 var enemyShootingDelay
 
-// function RandomInteger(oldInteger){
-//     var randInt = 0
-//     while(randInt == oldInteger){
-//         randInt = Math.floor(Math.random() * 5)
-//     }
-// }
-
 const ufoHeavy = () => {
+    // declare variables
+    const upBound = 5;
+    const lowBound = 30;
+    const heavy = "ufoHeavy";
+    const DROP_ORIGIN = vec2(275, 0);
+    const BOMB_SPEED = 30;
+    
     // spawn heavy UFO
     var randInt = 0;
     var previousRanInt = 0;
@@ -57,62 +50,58 @@ const ufoHeavy = () => {
         minDelay = 1000
     }, 10000)
 
-    setInterval(function(){
-        enemyShootingDelay = (Math.floor(Math.random() * 4) * 1000) + minDelay;
-        console.log(enemyShootingDelay)
-        randInt = Math.floor(Math.random() * 5)
-
-        var thisUfoPos = vec2(ufoPos[randInt])
-        const bomb = add([
-            pos(ufoPos[randInt]),
-            origin('center'),
-            "bomb",
-            sprite("mark"),
-            scale(0.001)         
-
-        ])
- 
-        const shooting = play("shooting");
-        shooting.volume(1);
-        shooting.speed(0.5);
+    if (getRemainingCities() != 0){
+        setInterval(function(){
+            enemyShootingDelay = (Math.floor(Math.random() * 4) * 1000) + minDelay;
+            randInt = Math.floor(Math.random() * 5)
+            if(getRemainingCities() != 0){}
+            var thisUfoPos = vec2(ufoPos[randInt])
+            const bomb = add([
+                pos(ufoPos[randInt]),
+                origin('center'),
+                "bomb",
+                sprite("mark"),
+                scale(0.001)         
+            ])
     
-        bomb.action(() => {
-            bomb.move(vec2(0, BOMB_SPEED))
-            render(() => {
-                if (bomb.exists() && bomb.pos.y < 280){
-                    drawLine(bomb.pos, thisUfoPos)
-                }
-            });
-            if (bomb.pos.y > 280) {
-                
-                const explosion = add([
-                    sprite('explosion'),
-                    pos(bomb.pos),
-                    origin('center'),
-                    scale(1),
-                    'explosion'
-                ])
-                explosion.collides('city', (c) => {
-                    // explosion sound effect   
-                    const explode = play("explode");
-                    explode.volume(1);
-                    explode.speed(0.5);
-                    destroy(c);
-                    destroyCity();
+            const shooting = play("shooting");
+            shooting.volume(1);
+            shooting.speed(0.5);
+        
+            bomb.action(() => {
+                bomb.move(vec2(0, BOMB_SPEED))
+                render(() => {
+                    if (bomb.exists() && bomb.pos.y < 280 && getRemainingCities() != 0){
+                        drawLine(bomb.pos, thisUfoPos)
+                    }
                 });
-                
-                destroy(bomb)
-                setTimeout(function(){ 
-                    destroy(explosion); 
-                }, 500);
-            }
-       
-        });
+                if (bomb.pos.y > 280) {
+                    
+                    const explosion = add([
+                        sprite('explosion'),
+                        pos(bomb.pos),
+                        origin('center'),
+                        scale(1),
+                        'explosion'
+                    ])
+                    explosion.collides('city', (c) => {
+                        // explosion sound effect   
+                        const explode = play("explode");
+                        explode.volume(1);
+                        explode.speed(0.5);
+                        destroy(c);
+                        destroyCity();
+                    });
+                    
+                    destroy(bomb)
+                    setTimeout(function(){ 
+                        destroy(explosion); 
+                    }, 500);
+                }
+        
+            });
 
-    }, enemyShootingDelay)
-    //enemyShooting()
-
-// spawn bomb - why don't you work?
-
+        }, enemyShootingDelay)
+    }
 }
 export default ufoHeavy
