@@ -25,9 +25,9 @@ const background = () => {
     add([sprite('upgrade'), layer('bg'), pos(0, 340), scale(game_scale)]);
     
     // game music   
-    const music = play("main", { loop: true, });
-    music.volume(0.2);
-    music.speed(1);
+    const mainBackgroundAudio = play("main", { loop: true, });
+    mainBackgroundAudio.volume(0.2);
+    mainBackgroundAudio.speed(1);
 
     // scoreboard element
     const score = add([
@@ -65,6 +65,9 @@ const background = () => {
         timer.value = timer.count.toFixed(0);
         timer.text = "Highscore: " + timer.count.toFixed(0);
         if (getRemainingCities() == 0) {
+            // Stops the music when scene changes
+            mainBackgroundAudio.loop = false
+            mainBackgroundAudio.stop()
             go('lose', { score: timer.count.toFixed(0) })
         }
     });

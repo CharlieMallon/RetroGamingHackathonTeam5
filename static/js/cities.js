@@ -1,6 +1,6 @@
 import kaboom from './kaboom.js'
 
-loadSprite("city", "placeholders/city.png");
+loadSprite("city", "sprites/city.png");
 
 var remainingCities = 5;
 
@@ -19,11 +19,11 @@ export function restartCities(){
 
 const cities = () => {
     var cityPos = [
-        vec2 (77, 290),
-        vec2 (177, 290),
-        vec2 (277, 290),
-        vec2 (377, 290),
-        vec2 (477, 290),
+        vec2 (77, 305),
+        vec2 (177, 305),
+        vec2 (277, 305),
+        vec2 (377, 305),
+        vec2 (477, 305),
     ]
 
     cityPos.forEach(element => {
@@ -31,8 +31,8 @@ const cities = () => {
             sprite("city"),
             "city",
             pos(element),
-            origin('center'),
-            scale(.4),
+            origin('bot'),
+            scale(.15),
         ]);
     }) 
 }
