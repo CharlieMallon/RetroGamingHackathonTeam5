@@ -1,8 +1,13 @@
+import { destroyCity } from "./cities.js";
 import shooting, { getSalvagedParts, removeSalvagedParts, upgradeExplosion, upgradeFrequency, upgradeSpeed } from "./shooting.js"
 
 loadSprite("explosion_upgrade", "sprites/upgrades/explosion.png");
 loadSprite("speed_upgrade", "sprites/upgrades/speed.png");
 loadSprite("frequency_upgrade", "sprites/upgrades/frequency.png");
+
+loadSprite("explosion_grayed", "sprites/upgrades/explosion_grayed.png");
+loadSprite("speed_grayed", "sprites/upgrades/speed_grayed.png");
+loadSprite("frequency_grayed", "sprites/upgrades/frequency_grayed.png");
 
 const upgrades = () => {
 
@@ -24,16 +29,15 @@ const upgrades = () => {
         vec2 (350, 375),
     ]
 
-    add([
+    var explosion_button = add([
         sprite("explosion_upgrade"),
         "explosion_upgrade",
         pos(upgradePos[0]),
         origin('center'),
         scale(.1),
-
     ]);
 
-    add([
+    var speed_button =  add([
         sprite("speed_upgrade"),
         "speed_upgrade",
         pos(upgradePos[1]),
@@ -42,7 +46,7 @@ const upgrades = () => {
        
     ]);
 
-    add([
+    var frequency_button =  add([
         sprite("frequency_upgrade"),
         "frequency_upgrade",
         pos(upgradePos[2]),
@@ -50,7 +54,7 @@ const upgrades = () => {
         scale(.1),
        
     ]);
-git 
+
     const upgradeClick = mouseClick(() => {
         var mPos = mousePos()
         var buttonSkin = 20
@@ -64,12 +68,22 @@ git
                     console.log("Upgrade " + i + " clicked!")
                     if (i==0){
                         if (currentExplosionLevel < explosionStats.length ){
+                            console.log("not maxxed")
                             var upgradeCost = currentExplosionLevel + 1
                             if (salvaged_parts >= upgradeCost){
                                 removeSalvagedParts(upgradeCost)
                                 currentExplosionLevel ++;
                                 upgradeExplosion(explosionStats[currentExplosionLevel-1])
                             }
+                        }else{
+                            destroy(explosion_button)
+                            add([
+                                sprite("explosion_grayed"),
+                                pos(upgradePos[0]),
+                                origin('center'),
+                                scale(.1),
+                            ]);
+                            console.log("change sprite")
                         }
                     }
                     if (i==1){
@@ -80,6 +94,14 @@ git
                                 currentSpeedLevel ++;
                                 upgradeSpeed(speedStats[currentSpeedLevel-1])
                             }
+                        }else{
+                            destroy(speed_button)
+                            add([
+                                sprite("speed_grayed"),
+                                pos(upgradePos[i]),
+                                origin('center'),
+                                scale(.1),
+                            ]);
                         }
                     }
                     if (i==2){
@@ -90,6 +112,14 @@ git
                                 currentFrequencyLevel ++;
                                 upgradeFrequency(frequencyStats[currentFrequencyLevel-1])
                             }
+                        }else{
+                            destroy(frequency_button)
+                            add([
+                                sprite("frequency_grayed"),
+                                pos(upgradePos[i]),
+                                origin('center'),
+                                scale(.1),
+                            ]);
                         }
                     }
                 }

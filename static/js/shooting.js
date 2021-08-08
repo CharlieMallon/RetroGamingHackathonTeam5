@@ -13,7 +13,7 @@ var shootFrequency = 1500;
 var millisLast = 0;
 var millis = 0;
 
-var salvagedParts = 0;
+var salvagedParts = 100;
 var explosionDuration = 1000;
 
 var testing = true;
