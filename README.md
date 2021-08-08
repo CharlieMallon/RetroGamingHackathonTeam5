@@ -50,7 +50,7 @@
   <b>click to view</b>
   </summary>
 
-![Project colour scheme (Coolors palette) screenshot](https://raw.githubusercontent.com/loosenthedark/brew-barberista-landing-page/main/docs/images/screenshots/brew-barberista-colour-scheme.png)
+![Project colour scheme (Coolors palette) screenshot](docs/images/screenshots/lunar_conflicts_colour_scheme.png)
 </details>
 
 ### Typography:
