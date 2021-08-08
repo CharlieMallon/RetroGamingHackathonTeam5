@@ -42,7 +42,7 @@ const background = () => {
     // game timer element
     const timer = add([
         text(0),
-        color(rgb(1, 0, 0)),
+        color(rgb(1, 1, 1)),
         pos(width()-15, height()-45),
         scale(1),
         origin("topright"),
@@ -56,9 +56,9 @@ const background = () => {
     timer.action(() => {
         timer.count += dt();
         timer.text = "Highscore: " + timer.count.toFixed(0);
-        if (timer.count > 30) {
-            go('lose', { score: score.value })
-        }
+        // if (timer.count > 30) {
+        //     go('lose', { score: score.value })
+        // }
     });
 };
 
