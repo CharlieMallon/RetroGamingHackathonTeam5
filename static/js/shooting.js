@@ -1,6 +1,5 @@
 import { destroyCity } from './cities.js';
 
-loadSprite('mark', 'sprites/mark.png');
 loadSprite('explosion', 'sprites/explosion.png')
 
 // sound effects

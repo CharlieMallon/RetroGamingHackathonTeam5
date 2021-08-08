@@ -7,7 +7,6 @@ import { getCityPositions } from './cities.js';
 // load in sprite
 loadSprite("ufoHeavy", "sprites/enemies/heavy_ufo.png");
 loadSprite("explosion", "sprites/explosion.png");
-loadSprite("mark", "sprites/mark.png");
 
 // sound effects
 loadSound("explode", 'music/explosion2.wav')
@@ -62,7 +61,7 @@ const ufoHeavy = () => {
             pos(ufoPos[randInt]),
             origin('center'),
             "bomb",
-            sprite("mark"),
+            sprite("ufoHeavy"),
             scale(0.001)         
         ])
    
