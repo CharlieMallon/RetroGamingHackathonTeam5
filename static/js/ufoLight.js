@@ -24,7 +24,7 @@ const ufoLight = () => {
     action("light", (o) => {
         o.move(90, 0);
     });
-
+ 
     // collides("light", "missile", (e, m) => {
     //     destroy(e);
     //     destroy(m);

@@ -72,13 +72,15 @@
   - **Fallback:** `serif`
 </details>
 
-### Wireframes:
+### Wireframes & Mockups:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
 
-  ![GDD design wireframe](GDD/missiles.jpg)
+  ![GDD wireframe](GDD/missiles.jpg)
+  ![Game UI design mockup](placeholders/mockup.png)
+  ![Game UI design wireframe](docs/wireframes/wireframe-lunar-conflicts.png)
 </details>
 
 ## Features
@@ -181,9 +183,9 @@
   </summary>
 
 - [Kaboom.js v0.5.0:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
-- [Google Fonts:](https://fonts.google.com/) used to import the Poppins and Lora fonts into the project's stylesheets
+- [DaFont:](https://www.dafont.com/) used to import the [PixelMix font](https://www.dafont.com/pixelmix.font) into the project's stylesheet
 - [Font Awesome v5.15.3:](https://fontawesome.com/) used to add appropriate and visually appealing site icons
-- [Visual Studio Code:](https://code.visualstudio.com/) used as the team's IDE for the project
+- [Visual Studio Code](https://code.visualstudio.com/)/[Gitpod:](https://gitpod.io/) used as the team's IDEs for the project
 - [Git:](https://git-scm.com/) used for version control by utilising the Gitpod terminal to commit frequently to Git and push all commits to GitHub
 - [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
 - [TinyJPG:](https://tinyjpg.com/) used for image compression
@@ -296,7 +298,25 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 | title/description goes here      | format category goes here       | [Bob Random Photographer](#)      | [Pexels](https://www.pexels.com/photo/calm-sea-under-blue-sky-4571251)      |
 </details>
 
-### Acknowledgments:
+## Acknowledgments:
+
+### Music / Sound Effects:
+
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+
+  | [**Audio Type**] Media title / description  | Media format  | Credit  | Link to original media source(s)  | 
+| :------------ |:--------------- |:-----|:---------------|
+| **`Background Music`**         |                 |      |                |
+| Heroic Intrusion / background music for the main scene      | .ogg       | [Patrick de Arteaga](#)      | [patrickdearteaga.com](https://patrickdearteaga.com/royalty-free-music/)      |
+| Never Surrender / background music for the start scene      | .ogg       | [Patrick de Arteaga](#)      | [patrickdearteaga.com](https://patrickdearteaga.com/chiptune-8-bit-retro/)      |
+| **`Sound Effects`**         |                 |      |                |
+| explosion / simple explosion when missile or bomb goes off      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
+| upgrade / simple sound effect when you click on the upgrades      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
+
+</details>
 
 ## Notice
 
