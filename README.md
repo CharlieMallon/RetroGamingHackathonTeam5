@@ -4,7 +4,7 @@
 
 # Lunar Conflicts game
 
-![Insert Coin arcade machine mockup](docs/images/screenshots/insert-coin.jpeg)
+![Insert Coin arcade machine mockup](docs/images/screenshots/insert-coin.jpg)
 
 #### [Live link to deployed project](https://charliemallon.github.io/RetroGamingHackathonTeam5/) (hosted on GitHub Pages)
 
@@ -290,12 +290,16 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 
 _Media type_ <br> Title/Description  | <br>Format  | <br>Credit(s)  | <br>Link(s) to original source(s)  | 
 | :------------ | :------------ |:--------------- |:---------------|
-| **_Background music_**         |                 |      |                |
+| _Favicon_        |                 |      |                |
+| '8-bit Mario Coin'     |    `.png`    |   [NicePNG](https://www.nicepng.com/)    | [NicePNG](https://www.nicepng.com/ourpic/u2w7a9e6r5r5i1y3_8-bit-mario-coin-mario-coin-pixel/)      |
+| _Background music_        |                 |      |                |
 | 'Never Surrender' (start scene)     |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
 | 'Heroic Intrusion' (main scene)      |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
-| **_Sound effects_**         |                 |      |                |
+| _Sound effects_         |                 |      |                |
 | Missile/Bomb explosion      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
 | Upgrade click noise      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
+| _`README` hero image_         |                 |      |                |
+| 'Insert Coin' graphic      |    `.jpg`    |   [Mr. Fruit (YouTube gaming channel)](https://www.youtube.com/c/MrFruitGamingChannel)    | [Google Images](https://i.ytimg.com/vi/ykYsPnsOC7o/maxresdefault.jpg)      |
 </details>
 
 ## Acknowledgments
