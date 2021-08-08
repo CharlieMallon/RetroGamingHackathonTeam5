@@ -141,11 +141,12 @@
   <b>click to view</b>
   </summary>
 
-- [Kaboom.js v0.5.0:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
+- [Kaboom.js v0.5.1:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
 - [DaFont:](https://www.dafont.com/) used to import the [PixelMix font](https://www.dafont.com/pixelmix.font) into the project's stylesheet
 - [Visual Studio Code](https://code.visualstudio.com/)/[Gitpod:](https://gitpod.io/) used as the team's IDEs for the project
 - [Git:](https://git-scm.com/) used for version control by utilising the Gitpod terminal to commit frequently to Git and push all commits to GitHub
 - [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
+- [GitHub Pages:](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages) used to host a live public version of the game site following [deployment](#deployment)
 - [TinyJPG:](https://tinyjpg.com/) used for image compression
 - [PicResize:](https://picresize.com/) used to crop and resize images
 - [WebAIM (contrast checker):](https://webaim.org/resources/contrastchecker/) / [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) used to ensure site foreground and background colour contrasts meet [WCAG 2 accessibility requirements](https://webaim.org/articles/contrast/)
@@ -234,10 +235,16 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 </details>
 
 ### Content:
+
+The developers drew inspiration for the game's design and format from the following sources:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
+
+- ['Atari's Missile Command'](https://en.wikipedia.org/wiki/Missile_Command) (Wikipedia)
+- ['Arcade Longplay [621] Missile Command'](https://www.youtube.com/watch?v=nokIGklnBGY) (World of Longplays YouTube channel)
+
 </details>
 
 ### Media:
@@ -267,3 +274,5 @@ _Media type_ <br> Title/Description  | <br>Format  | <br>Credit(s)  | <br>Link(s
 ## Notice
 
 This site has been created for development purposes only.
+
+[back to top](#lunar-conflicts-game)

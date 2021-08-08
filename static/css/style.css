@@ -102,6 +102,7 @@ footer a {
     line-height: 60px;
     font-size: 6pt;
     font-family: pixelMix, Courier, Monaco, monospace;
+    user-select: none;
 }
 
 footer ul {
