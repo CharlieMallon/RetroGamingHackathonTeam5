@@ -77,7 +77,8 @@ const upgrades = () => {
                     if (i==1){
                         if (currentSpeedLevel < speedStats.length){
                             var upgradeCost = currentSpeedLevel + 1
-                                if (salvaged_parts >= upgradeCost){
+                            if (salvaged_parts >= upgradeCost){
+                                removeSalvagedParts(upgradeCost)
                                 currentSpeedLevel ++;
                                 upgradeSpeed(speedStats[currentSpeedLevel-1])
                             }
@@ -86,7 +87,8 @@ const upgrades = () => {
                     if (i==2){
                         if (currentFrequencyLevel < frequencyStats.length){
                             var upgradeCost = currentFrequencyLevel + 1
-                                if (salvaged_parts >= upgradeCost){
+                            if (salvaged_parts >= upgradeCost){
+                                removeSalvagedParts(upgradeCost)
                                 currentFrequencyLevel ++;
                                 upgradeFrequency(frequencyStats[currentFrequencyLevel-1])
                             }
