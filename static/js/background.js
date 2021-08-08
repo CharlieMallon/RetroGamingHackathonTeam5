@@ -58,6 +58,8 @@ const background = () => {
         timer.text = "Highscore: " + timer.count.toFixed(0);
         if (getRemainingCities() == 0){
             go('lose', { score: timer.count.toFixed(0) })
+        }else{
+            console.log("Remaining cities: " + getRemainingCities())
         }
     });
 };

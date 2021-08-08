@@ -12,6 +12,10 @@ export function destroyCity(){
     remainingCities --;
 }
 
+export function restartCities(){
+    remainingCities = 5;  
+}
+
 const cities = () => {
     var cityPos = [
         vec2 (77, 290),
@@ -30,7 +34,6 @@ const cities = () => {
             scale(.4),
         ]);
     }) 
-
 }
 
 export default cities

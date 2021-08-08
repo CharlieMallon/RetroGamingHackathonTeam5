@@ -5,7 +5,7 @@ import shooting from "./shooting.js"
 import ufoHeavy from './ufoHeavy.js'
 import ufoLight from './ufoLight.js'
 import background from './background.js'
-import cities from './cities.js'
+import cities, { restartCities } from './cities.js'
 
 // Start Screen
 scene('start', () => {
@@ -41,6 +41,7 @@ scene("lose", ({ score }) => {
 	]);
     add([text('press space to restart', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
+        restartCities();
         go('main');
     });
 });
