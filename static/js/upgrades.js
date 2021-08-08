@@ -50,9 +50,7 @@ const upgrades = () => {
         scale(.1),
        
     ]);
-
-
-
+git 
     const upgradeClick = mouseClick(() => {
         var mPos = mousePos()
         var buttonSkin = 20
