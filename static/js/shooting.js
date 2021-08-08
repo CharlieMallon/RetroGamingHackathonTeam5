@@ -19,30 +19,30 @@ var salvagedParts
 var explosionDuration
 var testing
 
-export function upgradeSpeed(n){
+export function upgradeSpeed(n) {
     missileSpeed = n
 }
 
-export function upgradeExplosion(n){
+export function upgradeExplosion(n) {
     explosionRadius = n
 }
 
-export function upgradeFrequency(n){
+export function upgradeFrequency(n) {
     shootFrequency = n
 }
 
-export function getSalvagedParts(){
+export function getSalvagedParts() {
     return salvagedParts
 }
 
-export function removeSalvagedParts(n){
-    if (n < salvagedParts){
+export function removeSalvagedParts(n) {
+    if (n < salvagedParts) {
         salvagedParts -= n;
     }
 }
 
 const shooting = () => {
-    
+
     baseExplosionRadius = 0.5;
     explosionRadius = baseExplosionRadius;
     missileSpeed = 150;
@@ -56,9 +56,9 @@ const shooting = () => {
     console.log("shooting.js >> shooting >> ")
     const position = mouseClick(() => {
         millis = Date.now() - millisLast;
-        if (millis > shootFrequency){
+        if (millis > shootFrequency) {
             var mPos = mousePos()
-            if (mPos.y < SHOOT_ORIGIN.y){
+            if (mPos.y < SHOOT_ORIGIN.y) {
                 // explosion sound effect   
                 const missleAudio = play("shooting");
                 missleAudio.volume(0.2);
@@ -69,38 +69,38 @@ const shooting = () => {
                     origin('center'),
                     'missile',
                 ])
-                
+
                 //player_missile shooting audio
                 missile.action(() => {
                     //calculate vector from shoot origin to mPos
                     var move_vec = vec2((mPos.x - SHOOT_ORIGIN.x), (mPos.y - SHOOT_ORIGIN.y))
                     var move_vec_mag = move_vec.len();
-                    var move_vec_norm = vec2(move_vec.x/move_vec_mag, move_vec.y/move_vec_mag)
-                    
+                    var move_vec_norm = vec2(move_vec.x / move_vec_mag, move_vec.y / move_vec_mag)
+
                     //move the missile from from shoot origin to mPos
                     missile.move(vec2(move_vec_norm.x * missileSpeed, move_vec_norm.y * missileSpeed))
-                    
+
                     //draw missile line
                     render(() => {
-                        if (missile.pos.y > mPos.y){
+                        if (missile.pos.y > mPos.y) {
                             drawLine(SHOOT_ORIGIN, missile.pos)
                         }
                     });
 
                     //When missile goes past click pos
-                    if (missile.pos.y < mPos.y){
+                    if (missile.pos.y < mPos.y) {
                         //shake cam
                         camShake(2);
 
                         //instantiate explosion
                         const explosion = add([
-                            sprite('explosion'),
-                            pos(mPos),
-                            origin('center'),
-                            scale(explosionRadius),
-                            'explosion'
-                        ])
-                        // explosion sound effect   
+                                sprite('explosion'),
+                                pos(mPos),
+                                origin('center'),
+                                scale(explosionRadius),
+                                'explosion'
+                            ])
+                            // explosion sound effect   
                         const missileExplodeAudio = play("explode");
                         missileExplodeAudio.volume(0.2);
                         missileExplodeAudio.speed(0.2);
@@ -113,9 +113,9 @@ const shooting = () => {
                         explosion.collides('bomb', (b) => {
                             destroy(b);
                         });
-                        
-                        
-                        if (testing){
+
+
+                        if (testing) {
                             explosion.collides('city', (c) => {
                                 destroy(c);
                                 destroyCity();
@@ -126,16 +126,16 @@ const shooting = () => {
                         destroy(missile)
 
                         //destroy the explosion after a delay
-                        setTimeout(function(){ 
-                            destroy(explosion); 
+                        setTimeout(function() {
+                            destroy(explosion);
                         }, explosionDuration);
                     }
                 })
             }
-    }else{
-        // console.log("cant shoot")
-    }
-	});    
+        } else {
+            // console.log("cant shoot")
+        }
+    });
 }
 
 export default shooting
