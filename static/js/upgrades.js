@@ -56,14 +56,20 @@ const upgrades = () => {
     ]);
 
     const upgradeClick = mouseClick(() => {
+        
         var mPos = mousePos()
         var buttonSkin = 20
 
         for (var i = 0; i < 3; i++){
+            
             var buttonAreaX = vec2(upgradePos[i].x - buttonSkin, upgradePos[i].x + buttonSkin);
-            var buttonAreaY = vec2(upgradePos[i].y - buttonSkin, upgradePos[i].y + buttonSkin);
+            var buttonAreaY = vec2(390, 430);
+            console.log("mPos.x = " + mPos.x + " | mPos.y = " + mPos.y)
+            console.log("buttonareaY.x = " + buttonAreaY.x + " | buttonareaY.y = " + buttonAreaY.y)
             if (mPos.x > buttonAreaX.x && mPos.x < buttonAreaX.y){
+                console.log("x is ok")
                 if (mPos.y > buttonAreaY.x && mPos.y < buttonAreaY.y){
+                    console.log("y is ok")
                    var salvaged_parts = getSalvagedParts()
                     console.log("Upgrade " + i + " clicked!")
                     if (i==0){

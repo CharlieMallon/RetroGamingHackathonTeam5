@@ -45,6 +45,7 @@ export function removeSalvagedParts(n){
 
 const shooting = () => {
     const position = mouseClick(() => {
+        
         millis = Date.now() - millisLast;
         if (millis > shootFrequency){
             var mPos = mousePos()
