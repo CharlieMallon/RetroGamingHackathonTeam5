@@ -72,13 +72,14 @@
   - **Fallback:** `serif`
 </details>
 
-### Wireframes:
+### Wireframes & Mockups:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
 
   ![GDD wireframe](GDD/missiles.jpg)
+  ![Game UI design mockup](placeholders/mockup.png)
   ![Game UI design wireframe](docs/wireframes/wireframe-lunar-conflicts.png)
 </details>
 
