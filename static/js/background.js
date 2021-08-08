@@ -65,6 +65,9 @@ const background = () => {
         timer.value = timer.count.toFixed(0);
         timer.text = "Highscore: " + timer.count.toFixed(0);
         if (getRemainingCities() == 0) {
+            // Stops the music when scene changes
+            music.loop = false
+            music.stop()
             go('lose', { score: timer.count.toFixed(0) })
         }
     });

@@ -43,7 +43,11 @@ scene('main', () => {
     upgrades();
 });
 
-scene("lose", ({ score }) => {
+scene("lose", ({ score, music }) => {
+    // Lose menu music
+    const start = play("menu", { loop: true, });
+    start.volume(0.2);
+    start.speed(1);
     add([text('Lunar Conflicts', 32), pos(275, 100), origin('center')]);
 	add([
 		text("Score: " + score, 24),
@@ -53,6 +57,9 @@ scene("lose", ({ score }) => {
     add([text('press space to restart', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
         restartCities()
+        // Stops the music when scene changes
+        start.loop = false
+        start.stop()
         go('main')
     });
 });
