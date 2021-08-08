@@ -15,6 +15,10 @@ loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
 loadSprite("explosion", "sprites/explosion.png");
 loadSprite("mark", "sprites/mark.png");
 
+// sound effects
+loadSound("explode", 'music/explosion2.wav')
+loadSound("shooting", 'music/shooting.wav')
+
 var ufoPos = [
     vec2 (77, 10),
     vec2 (177, 10),
@@ -46,6 +50,11 @@ const ufoHeavy = () => {
         
     ])
 
+    // explosion sound effect   
+    const shooting = play("shooting");
+    shooting.volume(1);
+    shooting.speed(0.5);
+
     bomb.action(() => {
    
         bomb.move(vec2(0, BOMB_SPEED))
@@ -64,6 +73,10 @@ const ufoHeavy = () => {
                 'explosion'
             ])
             explosion.collides('city', (c) => {
+                // explosion sound effect   
+                const explode = play("explode");
+                explode.volume(1);
+                explode.speed(0.5);
                 destroy(c);
                 destroyCity();
             });
