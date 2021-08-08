@@ -18,6 +18,7 @@ const upgrades = () => {
             pos(element),
             origin('center'),
             scale(.1),
+           
         ]);
     }) 
 }
