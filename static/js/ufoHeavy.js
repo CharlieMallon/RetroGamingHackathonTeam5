@@ -2,6 +2,7 @@
 import kaboom from './kaboom.js'
 import { getRemainingCities } from './cities.js'
 import { destroyCity } from './cities.js';
+import { getCityPositions } from './cities.js';
 
 // load in sprite
 loadSprite("ufoHeavy", "sprites/enemies/heavy_ufo.png");
@@ -53,7 +54,10 @@ const ufoHeavy = () => {
     function ufoShooting(){     
         enemyShootingDelay = (Math.floor(Math.random() * 4) * 1000) + minDelay;
         randInt = Math.floor(Math.random() * 5)
+        var randomCity= Math.floor(Math.random() * 5)
         var thisUfoPos = vec2(ufoPos[randInt])
+        var targetCityPos = vec2(getCityPositions()[randomCity])
+        console.log(targetCityPos.x)
         const bomb = add([
             pos(ufoPos[randInt]),
             origin('center'),
@@ -68,7 +72,12 @@ const ufoHeavy = () => {
         shooting.speed(0.5)
     
         bomb.action(() => {
-            bomb.move(vec2(0, BOMB_SPEED))
+
+            var move_vec = vec2((targetCityPos.x - thisUfoPos.x), (targetCityPos.y - thisUfoPos.y))
+            var move_vec_mag = move_vec.len();
+            var move_vec_norm = vec2(move_vec.x/move_vec_mag, move_vec.y/move_vec_mag)
+
+            bomb.move(vec2(move_vec_norm.x * BOMB_SPEED, move_vec_norm.y * BOMB_SPEED))
             render(() => {
                 if (bomb.exists() && bomb.pos.y < 280 && getRemainingCities() != 0){
                     drawLine(bomb.pos, thisUfoPos)

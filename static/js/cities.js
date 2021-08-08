@@ -3,6 +3,7 @@ import kaboom from './kaboom.js'
 loadSprite("city", "sprites/city.png");
 
 var remainingCities = 5;
+var cityPos;
 
 export function getRemainingCities(){
     return remainingCities;
@@ -17,8 +18,12 @@ export function restartCities(){
     console.log("cities.js >> restartCities()")
 }
 
+export function getCityPositions(){
+    return cityPos;
+}
+
 const cities = () => {
-    var cityPos = [
+    cityPos = [
         vec2 (77, 305),
         vec2 (177, 305),
         vec2 (277, 305),
