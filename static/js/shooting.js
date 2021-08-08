@@ -12,6 +12,11 @@ var millis = 0;
 
 var salvagedParts = 0;
 
+export function getSalvagedParts(){
+    return salvagedParts
+}
+
+
 const shooting = () => {
     const position = mouseClick(() => {
         millis = Date.now() - millisLast;
@@ -19,7 +24,6 @@ const shooting = () => {
             millisLast = Date.now()
             var mPos = mousePos()
             const missile = add([
-                //sprite('mark'),
                 pos(SHOOT_ORIGIN),
                 origin('center'),
                 'missile',
@@ -56,6 +60,8 @@ const shooting = () => {
 
                     explosion.collides('light', (l) => {
                         destroy(l);
+                        salvagedParts++;
+                        console.log("shooting.js >> salvagedParts: " + salvagedParts)
                     });
 
                     //destroy the missile object

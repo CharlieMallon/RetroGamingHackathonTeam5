@@ -1,5 +1,7 @@
 // load in kaboom variables from kaboom.js
 import kaboom from './kaboom.js'
+import shooting, { getSalvagedParts } from './shooting.js'
+import salvagedParts from './shooting.js'
 
 // load background sprites (Main Game)
 loadSprite('sky', 'sprites/backgrounds/air.png');
@@ -30,9 +32,16 @@ const background = () => {
         }
     ]);
 
+    score.action(()=>{
+        score.value = shooting.salvagedParts;
+        score.text = getSalvagedParts();
+        console.log(getSalvagedParts())
+
+    });
+
     // game timer element
     const timer = add([
-        text('0'),
+        text(0),
         color(rgb(1, 0, 0)),
         pos(width() / 2, height() / 2),
         scale(2),
