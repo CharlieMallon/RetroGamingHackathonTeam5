@@ -24,9 +24,9 @@ const background = () => {
     const score = add([
         text('0'),
         color(rgb(0, 1, 0)),
-        pos(width() / 2 + 100, height() / 2),
+        pos(width()-150, height()-30),
         layer('ui'),
-        scale(3),
+        scale(1),
         {
             value: 0,
         }
@@ -34,7 +34,7 @@ const background = () => {
 
     score.action(()=>{
         score.value = shooting.salvagedParts;
-        score.text = getSalvagedParts();
+        score.text = "Upgrade points: " + getSalvagedParts();
         console.log(getSalvagedParts())
 
     });
@@ -43,8 +43,9 @@ const background = () => {
     const timer = add([
         text(0),
         color(rgb(1, 0, 0)),
-        pos(width() / 2, height() / 2),
-        scale(2),
+        pos(width()-15, height()-45),
+        scale(1),
+        origin("topright"),
         layer('ui'),
         {
             count: TIME_ELAPSED,
@@ -54,7 +55,7 @@ const background = () => {
     // Start the game timer
     timer.action(() => {
         timer.count += dt();
-        timer.text = timer.count.toFixed(2);
+        timer.text = "Highscore: " + timer.count.toFixed(0);
         if (timer.count > 30) {
             go('lose', { score: score.value })
         }
