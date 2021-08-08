@@ -3,7 +3,8 @@ import kaboom from './kaboom.js'
 // load in game functions
 import shooting from "./shooting.js"
 import ufoHeavy from './ufoHeavy.js'
-import ufoLight from './ufoLight.js'
+import ufoLightLTR from './ufoLightLTR.js'
+import ufoLightRTL from './ufoLightRTL.js'
 import background from './background.js'
 import upgrades from './upgrades.js'
 import cities, { getRemainingCities, restartCities } from './cities.js'
@@ -28,7 +29,7 @@ scene('start', () => {
     keyPress('space', () => {
         start.stop()
         go('main');
-        
+
     });
 });
 
@@ -38,18 +39,19 @@ scene('main', () => {
     background();
     shooting();
     ufoHeavy();
-    ufoLight();
+    ufoLightLTR();
+    ufoLightRTL();
     cities();
     upgrades();
 });
 
 scene("lose", ({ score }) => {
     add([text('Lunar Conflicts', 32), pos(275, 100), origin('center')]);
-	add([
-		text("Score: " + score, 24),
-		origin("center"),
-		pos(width() / 2, height() / 2),
-	]);
+    add([
+        text("Score: " + score, 24),
+        origin("center"),
+        pos(width() / 2, height() / 2),
+    ]);
     add([text('press space to restart', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
         restartCities()
