@@ -5,6 +5,7 @@ loadSprite('explosion', 'sprites/explosion.png')
 
 // sound effects
 loadSound("explode", 'music/explosion.wav')
+loadSound("shooting", 'music/shooting.wav')
 
 const SHOOT_ORIGIN = vec2(275, 300);
 
@@ -49,6 +50,10 @@ const shooting = () => {
         if (millis > shootFrequency){
             var mPos = mousePos()
             if (mPos.y < SHOOT_ORIGIN.y){
+                // explosion sound effect   
+                const shooting = play("shooting");
+                shooting.volume(0.2);
+                shooting.speed(1);
                 millisLast = Date.now()
                 const missile = add([
                     pos(SHOOT_ORIGIN),
