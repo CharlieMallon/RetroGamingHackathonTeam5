@@ -41,9 +41,9 @@ const shooting = () => {
     const position = mouseClick(() => {
         millis = Date.now() - millisLast;
         if (millis > shootFrequency){
-            millisLast = Date.now()
             var mPos = mousePos()
             if (mPos.y < SHOOT_ORIGIN.y){
+                millisLast = Date.now()
                 const missile = add([
                     pos(SHOOT_ORIGIN),
                     origin('center'),
