@@ -9,6 +9,9 @@ loadSprite('sky', 'sprites/backgrounds/air.png');
 loadSprite('ground', 'sprites/backgrounds/ground.png');
 loadSprite('upgrade', 'sprites/backgrounds/upgrade_area.png');
 
+// music
+ loadSound("main", 'music/Heroic Intrusion.ogg')
+
 // declare main (global) variables
 const TIME_ELAPSED = 0
 
@@ -20,6 +23,11 @@ const background = () => {
     add([sprite('sky'), layer('bg'), pos(0, 0), scale(game_scale)]);
     add([sprite('ground'), layer('bg'), pos(0, 226), scale(game_scale)]);
     add([sprite('upgrade'), layer('bg'), pos(0, 340), scale(game_scale)]);
+    
+    // game music   
+    const music = play("main", { loop: true, });
+    music.volume(0.2);
+    music.speed(1);
 
     // scoreboard element
     const score = add([
