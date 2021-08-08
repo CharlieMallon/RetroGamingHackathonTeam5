@@ -41,15 +41,16 @@ const upgrades = () => {
 
     const upgradeClick = mouseClick(() => {
         var mPos = mousePos()
-        console.log("button clicked at " + mPos.x)
-         var buttonWidth = 10;
-        var buttonHeight = 10;
-        console.log("l " + upgradePos[0] - buttonWidth)
-        console.log("3 " + upgradePos[0] + buttonWidth)
-       
-       
-        if ((mPos.x > (upgradePos[0] - buttonWidth)) && (mPos.x < (upgradePos[0] + buttonWidth)) ){
-            console.log("Upgrade 0 clicked!")
+        var buttonSkin = 20
+
+
+        var buttonAreaX = vec2(upgradePos[0].x - buttonSkin, upgradePos[0].x + buttonSkin);
+        var buttonAreaY = vec2(upgradePos[0].y - buttonSkin, upgradePos[0].y + buttonSkin);
+     
+        if (mPos.x > buttonAreaX.x && mPos.x < buttonAreaX.y){
+            if (mPos.y > buttonAreaY.x && mPos.y < buttonAreaY.y){
+                console.log("Upgrade 0 clicked!")
+            }
         }
     });    
 }
