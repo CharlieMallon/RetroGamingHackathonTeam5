@@ -7,28 +7,24 @@ const lowBound = 200;
 const leftLight = "ufoLightLTR"
 
 // load in sprite
-loadSprite("ufoLightLTR", "placeholders/light_ufo-ltr.png");
+loadSprite("ufoLightLTR", "sprites/enemies/light_ufo_LTR.png");
 
 const ufoLightLTR = () => {
+    var light_ufo;
     // spawn light UFO
-    loop(rand(1, 3), () => {
-        add([
+    loop(rand(4, 10), () => {
+        light_ufo = add([
             sprite(leftLight),
-            "leftLight",
+            "light",
             leftLight,
             pos(-50, rand(lowBound, upBound)),
-            scale(.4)
+            scale(.17)
         ]);
     });
 
-    action("leftLight", (o) => {
-        o.move(120, 0);
+    light_ufo.action(() => {
+        light_ufo.move(120, 0);
     });
-
-    // collides("light", "missile", (e, m) => {
-    //     destroy(e);
-    //     destroy(m);
-    // });
 };
 
 export default ufoLightLTR

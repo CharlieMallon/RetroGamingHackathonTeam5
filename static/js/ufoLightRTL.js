@@ -6,29 +6,27 @@ const upBound = 50;
 const lowBound = 200;
 const rightLight = "ufoLightRTL"
 
+
 // load in sprite
-loadSprite("ufoLightRTL", "placeholders/light_ufo-rtl.png");
+loadSprite("ufoLightRTL", "sprites/enemies/light_ufo_RTL.png");
 
 const ufoLightRTL = () => {
     // spawn light UFO
-    loop(rand(1, 3), () => {
-        add([
+    var light_ufo;
+
+    loop(rand(4, 10), () => {
+        light_ufo = add([
             sprite(rightLight),
-            "rightLight",
+            "light",
             rightLight,
             pos(width() + 50, rand(lowBound, upBound)),
-            scale(.4)
+            scale(.17)
         ]);
     });
 
-    action("rightLight", (o) => {
-        o.move(-120, 0);
+    light_ufo.action(() => {
+        light_ufo.move(-120, 0);
     });
-
-    // collides("light", "missile", (e, m) => {
-    //     destroy(e);
-    //     destroy(m);
-    // });
 };
 
 export default ufoLightRTL
