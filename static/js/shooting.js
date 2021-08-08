@@ -45,7 +45,6 @@ export function removeSalvagedParts(n){
 
 const shooting = () => {
     const position = mouseClick(() => {
-        
         millis = Date.now() - millisLast;
         if (millis > shootFrequency){
             var mPos = mousePos()
@@ -58,7 +57,6 @@ const shooting = () => {
                 ])
                 
                 //player_missile shooting audio
-
                 missile.action(() => {
                     //calculate vector from shoot origin to mPos
                     var move_vec = vec2((mPos.x - SHOOT_ORIGIN.x), (mPos.y - SHOOT_ORIGIN.y))
@@ -79,9 +77,7 @@ const shooting = () => {
                     if (missile.pos.y < mPos.y){
                         //shake cam
                         camShake(2);
-                        //player_missile explosion audio
 
-                        
                         //instantiate explosion
                         const explosion = add([
                             sprite('explosion'),
@@ -91,9 +87,9 @@ const shooting = () => {
                             'explosion'
                         ])
                         // game music   
-                        const explode = play("explode");
-                        explode.volume(0.2);
-                        explode.speed(0.2);
+                        // const explode = play("explode");
+                        // explode.volume(0.2);
+                        // explode.speed(0.2);
 
                         explosion.collides('light', (l) => {
                             destroy(l);
