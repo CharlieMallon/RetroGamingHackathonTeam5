@@ -50,9 +50,9 @@ const shooting = () => {
     shootFrequency = 1000;
     millisLast = 0;
     millis = 0;
-    salvagedParts = 100;
+    salvagedParts = 0;
     explosionDuration = 1000;
-    testing = true;
+    testing = false;
 
     console.log("shooting.js >> shooting >> ")
     const position = mouseClick(() => {
