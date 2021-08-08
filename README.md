@@ -78,7 +78,8 @@
   <b>click to view</b>
   </summary>
 
-  ![GDD design wireframe](GDD/missiles.jpg)
+  ![GDD wireframe](GDD/missiles.jpg)
+  ![Game UI design wireframe](docs/wireframes/wireframe-lunar-conflicts.png)
 </details>
 
 ## Features
