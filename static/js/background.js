@@ -26,7 +26,7 @@ const background = () => {
     
     // game music   
     const mainBackgroundAudio = play("main", { loop: true, });
-    mumainBackgroundAudiosic.volume(0.2);
+    mainBackgroundAudio.volume(0.2);
     mainBackgroundAudio.speed(1);
 
     // scoreboard element
