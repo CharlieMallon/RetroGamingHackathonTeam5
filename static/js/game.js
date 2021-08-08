@@ -41,10 +41,6 @@ scene('main', () => {
     ufoLight();
     cities();
     upgrades();
-    // if (getRemainingCities() == 0){
-    //     main.stop()
-    //     go('lose')
-    // }
 });
 
 scene("lose", ({ score }) => {
@@ -56,6 +52,7 @@ scene("lose", ({ score }) => {
 	]);
     add([text('press space to restart', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
+        restartCities()
         go('main')
     });
 });
