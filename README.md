@@ -234,10 +234,16 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 </details>
 
 ### Content:
+
+The developers drew inspiration for the game's design and format from the following sources:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
+
+- ['Atari's Missile Command'](https://en.wikipedia.org/wiki/Missile_Command) (Wikipedia)
+- ['Arcade Longplay [621] Missile Command'](https://www.youtube.com/watch?v=nokIGklnBGY) (World of Longplays YouTube channel)
+
 </details>
 
 ### Media:
