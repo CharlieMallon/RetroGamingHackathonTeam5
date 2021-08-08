@@ -1,6 +1,6 @@
-
 loadSprite("explosion_upgrade", "sprites/upgrades/explosion.png");
 loadSprite("speed_upgrade", "sprites/upgrades/speed.png");
+loadSprite("frequency_upgrade", "sprites/upgrades/frequency.png");
 
 const upgrades = () => {
     var upgradePos = [
@@ -36,6 +36,15 @@ const upgrades = () => {
         sprite("speed_upgrade"),
         "speed_upgrade",
         pos(upgradePos[1]),
+        origin('center'),
+        scale(.1),
+       
+    ]);
+
+    add([
+        sprite("frequency_upgrade"),
+        "frequency_upgrade",
+        pos(upgradePos[2]),
         origin('center'),
         scale(.1),
        
