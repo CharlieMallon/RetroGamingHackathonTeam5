@@ -1,4 +1,5 @@
 // load in kaboom variables from kaboom.js
+import { getRemainingCities } from './cities.js';
 import kaboom from './kaboom.js'
 import shooting, { getSalvagedParts } from './shooting.js'
 import salvagedParts from './shooting.js'
@@ -59,6 +60,11 @@ const background = () => {
         // if (timer.count > 30) {
         //     go('lose', { score: score.value })
         // }
+        if (getRemainingCities() == 0){
+            go('lose', { score: score.value })
+        }else{
+            console.log("there's still " + getRemainingCities() + " to go!")
+        }
     });
 };
 

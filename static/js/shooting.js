@@ -1,4 +1,4 @@
-import kaboom from './kaboom.js'
+import { destroyCity } from './cities.js';
 
 loadSprite('mark', 'sprites/mark.png');
 loadSprite('explosion', 'sprites/explosion.png')
@@ -68,6 +68,11 @@ const shooting = () => {
                         destroy(l);
                         salvagedParts++;
                         console.log("shooting.js >> salvagedParts: " + salvagedParts)
+                    });
+
+                    explosion.collides('city', (c) => {
+                        destroy(c);
+                        destroyCity();
                     });
 
                     //destroy the missile object

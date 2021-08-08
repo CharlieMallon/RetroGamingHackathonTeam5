@@ -2,6 +2,16 @@ import kaboom from './kaboom.js'
 
 loadSprite("city", "placeholders/city.png");
 
+var remainingCities = 5;
+
+export function getRemainingCities(){
+    return remainingCities;
+}
+
+export function destroyCity(){
+    remainingCities --;
+}
+
 const cities = () => {
     var cityPos = [
         vec2 (77, 290),
