@@ -33,7 +33,7 @@ const background = () => {
     const score = add([
         text('0'),
         color(rgb(0, 1, 0)),
-        pos(width()-150, height()-30),
+        pos(width() - 150, height() - 30),
         layer('ui'),
         scale(1),
         {
@@ -41,7 +41,7 @@ const background = () => {
         }
     ]);
 
-    score.action(()=>{
+    score.action(() => {
         score.value = getSalvagedParts();
         score.text = "Upgrade points: " + getSalvagedParts();
     });
@@ -50,7 +50,7 @@ const background = () => {
     const timer = add([
         text(0),
         color(rgb(1, 1, 1)),
-        pos(width()-15, height()-45),
+        pos(width() - 15, height() - 45),
         scale(1),
         origin("topright"),
         layer('ui'),
@@ -64,7 +64,7 @@ const background = () => {
         timer.count += dt();
         timer.value = timer.count.toFixed(0);
         timer.text = "Highscore: " + timer.count.toFixed(0);
-        if (getRemainingCities() == 0){
+        if (getRemainingCities() == 0) {
             go('lose', { score: timer.count.toFixed(0) })
         }
     });
