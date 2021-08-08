@@ -3,15 +3,29 @@ import { destroyCity } from './cities.js';
 loadSprite('mark', 'sprites/mark.png');
 loadSprite('explosion', 'sprites/explosion.png')
 
-const MISSLE_SPEED = 150;
 const SHOOT_ORIGIN = vec2(275, 300);
-var shootRefresh = 1000;
+
+var explosionRadius = 1;
+var missileSpeed = 150;
+var shootFrequency = 1000;
 
 var millisLast = 0;
 var millis = 0;
 
 var salvagedParts = 0;
 var explosionDuration = 1000;
+
+export function upgradeSpeed(n){
+    missileSpeed = n
+}
+
+export function upgradeExplosion(n){
+    explosionRadius = n
+}
+
+export function upgradeFrequency(n){
+    shootFrequency = n
+}
 
 export function getSalvagedParts(){
     return salvagedParts
@@ -26,7 +40,7 @@ export function removeSalvagedParts(n){
 const shooting = () => {
     const position = mouseClick(() => {
         millis = Date.now() - millisLast;
-        if (millis > shootRefresh){
+        if (millis > shootFrequency){
             millisLast = Date.now()
             var mPos = mousePos()
             const missile = add([
@@ -42,7 +56,7 @@ const shooting = () => {
                 var move_vec_norm = vec2(move_vec.x/move_vec_mag, move_vec.y/move_vec_mag)
                 
                 //move the missile from from shoot origin to mPos
-                missile.move(vec2(move_vec_norm.x * MISSLE_SPEED, move_vec_norm.y * MISSLE_SPEED))
+                missile.move(vec2(move_vec_norm.x * missileSpeed, move_vec_norm.y * missileSpeed))
                 
                 //draw missile line
                 render(() => {
@@ -61,6 +75,7 @@ const shooting = () => {
                         sprite('explosion'),
                         pos(mPos),
                         origin('center'),
+                        scale(explosionRadius),
                         'explosion'
                     ])
 
