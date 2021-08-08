@@ -4,11 +4,11 @@ loadSprite("city", "placeholders/city.png");
 
 const cities = () => {
     var cityPos = [
-        vec2 (60, 270),
-        vec2 (160, 270),
-        vec2 (260, 270),
-        vec2 (360, 270),
-        vec2 (460, 270),
+        vec2 (77, 290),
+        vec2 (177, 290),
+        vec2 (277, 290),
+        vec2 (377, 290),
+        vec2 (477, 290),
     ]
 
     cityPos.forEach(element => {
@@ -16,6 +16,7 @@ const cities = () => {
             sprite("city"),
             "city",
             pos(element),
+            origin('center'),
             scale(.4),
         ]);
     }) 
