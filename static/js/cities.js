@@ -1,6 +1,6 @@
 import kaboom from './kaboom.js'
 
-loadSprite("city", "placeholders/city.png");
+loadSprite("city", "sprites/city.png");
 
 var remainingCities = 5;
 
@@ -32,7 +32,7 @@ const cities = () => {
             "city",
             pos(element),
             origin('center'),
-            scale(.4),
+            scale(.3),
         ]);
     }) 
 }
