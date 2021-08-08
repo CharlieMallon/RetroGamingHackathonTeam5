@@ -59,17 +59,15 @@
   <b>click to view</b>
   </summary>
 
-- #### Primary font...
+- #### Primary (in-game) font...
 
-  - **Family:** [Poppins](https://fonts.google.com/specimen/Poppins)
-  - **Weights:** 300, 400, 500
-  - **Fallback:** `sans-serif`
+  - **Family:** [Unscii](http://viznut.fi/unscii/)
+  - **Fallback(s):** n/a
 
-- #### Secondary (Heading) font...
+- #### Secondary (`footer`) font...
 
-  - **Family:** [Lora](https://fonts.google.com/specimen/Lora)
-  - **Weights:** 600, 700
-  - **Fallback:** `serif`
+  - **Family:** [PixelMix](https://www.dafont.com/pixelmix.font)
+  - **Fallback(s):** `Courier`, `Monaco`, `monospace`
 </details>
 
 ### Wireframes & Mockups:
@@ -87,51 +85,12 @@
 
 ### Existing Features:
 
-- #### `nav`:
-
-  - ##### Fixed Navigation Bar:
-  <details>
-    <summary>
-    <b>click to view</b>
-    </summary>
-  </details>
-
-  - ##### (Off-Canvas) Navigation Menu:
-  <details>
-    <summary>
-    <b>click to view</b>
-    </summary>
-  </details>
-
-- #### `header`:
+- #### `canvas`:
 <details>
   <summary>
   <b>click to view</b>
-  </summary>  
+  </summary>
 </details>
-
-- #### `main`:
-
-  - ###### `section` A:
-  <details>
-    <summary>
-    <b>click to view</b>
-    </summary>
-  </details>
-
-  - ###### `section` B:
-  <details>
-    <summary>
-    <b>click to view</b>
-    </summary>
-  </details>
-
-  - ###### `section` C:
-  <details>
-    <summary>
-    <b>click to view</b>
-    </summary>
-  </details>
 
 - #### `footer`:
 <details>
@@ -184,7 +143,6 @@
 
 - [Kaboom.js v0.5.0:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
 - [DaFont:](https://www.dafont.com/) used to import the [PixelMix font](https://www.dafont.com/pixelmix.font) into the project's stylesheet
-- [Font Awesome v5.15.3:](https://fontawesome.com/) used to add appropriate and visually appealing site icons
 - [Visual Studio Code](https://code.visualstudio.com/)/[Gitpod:](https://gitpod.io/) used as the team's IDEs for the project
 - [Git:](https://git-scm.com/) used for version control by utilising the Gitpod terminal to commit frequently to Git and push all commits to GitHub
 - [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
@@ -290,16 +248,16 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 
 _Media type_ <br> Title/Description  | <br>Format  | <br>Credit(s)  | <br>Link(s) to original source(s)  | 
 | :------------ | :------------ |:--------------- |:---------------|
-| _Favicon_        |                 |      |                |
-| '8-bit Mario Coin'     |    `.png`    |   [NicePNG](https://www.nicepng.com/)    | [NicePNG](https://www.nicepng.com/ourpic/u2w7a9e6r5r5i1y3_8-bit-mario-coin-mario-coin-pixel/)      |
-| _Background music_        |                 |      |                |
-| 'Never Surrender' (start scene)     |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
-| 'Heroic Intrusion' (main scene)      |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
-| _Sound effects_         |                 |      |                |
-| Missile/Bomb explosion      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
-| Upgrade click noise      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
-| _`README` hero image_         |                 |      |                |
-| 'Insert Coin' graphic      |    `.jpg`    |   [Mr. Fruit (YouTube gaming channel)](https://www.youtube.com/c/MrFruitGamingChannel)    | [Google Images](https://i.ytimg.com/vi/ykYsPnsOC7o/maxresdefault.jpg)      |
+| **_Favicon_**        |                 |      |                |
+| **'8-bit Mario Coin'**     |    `.png`    |   [NicePNG](https://www.nicepng.com/)    | [NicePNG](https://www.nicepng.com/ourpic/u2w7a9e6r5r5i1y3_8-bit-mario-coin-mario-coin-pixel/)      |
+| **_Background music_**        |                 |      |                |
+| **'Never Surrender' (start scene)**     |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
+| **'Heroic Intrusion' (main scene)**      |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
+| **_Sound effects_**         |                 |      |                |
+| **Missile/Bomb explosion**      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
+| **Upgrade click noise**      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
+| **_`README` hero image_**         |                 |      |                |
+| **'Insert Coin' graphic**      |    `.jpg`    |   [Mr. Fruit (YouTube gaming channel)](https://www.youtube.com/c/MrFruitGamingChannel)    | [Google Images](https://i.ytimg.com/vi/ykYsPnsOC7o/maxresdefault.jpg)      |
 </details>
 
 ## Acknowledgments

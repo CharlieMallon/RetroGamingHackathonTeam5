@@ -101,7 +101,7 @@ footer a {
     color: hsl(0, 0%, 94%);
     line-height: 60px;
     font-size: 6pt;
-    font-family: pixelMix;
+    font-family: pixelMix, Courier, Monaco, monospace;
 }
 
 footer ul {
