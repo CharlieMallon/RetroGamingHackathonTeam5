@@ -28,7 +28,7 @@ const ufoHeavy = () => {
     const lowBound = 30;
     const heavy = "ufoHeavy";
     const DROP_ORIGIN = vec2(275, 0);
-    const BOMB_SPEED = 30;
+    const BOMB_SPEED = 50;
 
     // spawn heavy UFO
     var randInt = 0;
@@ -93,6 +93,7 @@ const ufoHeavy = () => {
                 ])
                 explosion.collides('city', (c) => {
                     // explosion sound effect   
+                    camShake(5);
                     const explode = play("explode")
                     explode.volume(1)
                     explode.speed(0.5)
