@@ -14,6 +14,7 @@ export function destroyCity(){
 
 export function restartCities(){
     remainingCities = 5;  
+    console.log("cities.js >> restartCities()")
 }
 
 const cities = () => {
