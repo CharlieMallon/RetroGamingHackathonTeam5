@@ -64,8 +64,7 @@ const upgrades = () => {
             
             var buttonAreaX = vec2(upgradePos[i].x - buttonSkin, upgradePos[i].x + buttonSkin);
             var buttonAreaY = vec2(390, 430);
-            console.log("mPos.x = " + mPos.x + " | mPos.y = " + mPos.y)
-            console.log("buttonareaY.x = " + buttonAreaY.x + " | buttonareaY.y = " + buttonAreaY.y)
+            console.log("X: " + mPos.x + " Y: " + mPos.y)
             if (mPos.x > buttonAreaX.x && mPos.x < buttonAreaX.y){
                 console.log("x is ok")
                 if (mPos.y > buttonAreaY.x && mPos.y < buttonAreaY.y){
