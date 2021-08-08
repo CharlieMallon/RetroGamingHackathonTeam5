@@ -231,6 +231,7 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 - [Kaboom.js docs](https://kaboomjs.com/)
 - ['Easy JavaScript Game Development with Kaboom.js'](https://www.youtube.com/watch?v=4OaHB0JbJDI) (freeCodeCamp)
 - ['5 Tips for Getting Started with Kaboom.js'](https://blog.ourcade.co/posts/2021/5-tips-getting-started-kaboom-js/) (Ourcade)
+- ['How to disable text selection highlighting'](https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting) (Stack Overflow)
 
 </details>
 

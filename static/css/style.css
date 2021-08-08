@@ -87,6 +87,10 @@ footer {
     height: 60px;
 }
 
+footer > * {
+    user-select: none;
+}
+
 footer div {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -102,7 +106,6 @@ footer a {
     line-height: 60px;
     font-size: 6pt;
     font-family: pixelMix, Courier, Monaco, monospace;
-    user-select: none;
 }
 
 footer ul {

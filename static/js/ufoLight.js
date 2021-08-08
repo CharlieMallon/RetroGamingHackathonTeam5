@@ -3,7 +3,7 @@ import kaboom from './kaboom.js'
 
 // declare variables
 const upBound = 50;
-const lowBound = 100;
+const lowBound = 200;
 const light = "ufoLight"
 
 // load in sprite
@@ -22,9 +22,9 @@ const ufoLight = () => {
     });
 
     action("light", (o) => {
-        o.move(90, 0);
+        o.move(120, 0);
     });
- 
+
     // collides("light", "missile", (e, m) => {
     //     destroy(e);
     //     destroy(m);
