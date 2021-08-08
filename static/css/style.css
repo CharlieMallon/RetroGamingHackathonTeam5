@@ -18,7 +18,7 @@ body {
     background-color: hsl(284, 93%, 47%);
     line-height: 1.5;
     width: 100%;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 60px);
     position: relative;
 }
 
@@ -71,7 +71,7 @@ ins {
 canvas {
     display: block;
     margin: 0 auto;
-    max-height: calc(100vh - 56px);
+    max-height: calc(100vh - 60px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,7 +84,7 @@ canvas {
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     font-family: "Poppins", sans-serif;
-    height: 56px;
+    height: 60px;
 }
 
 footer div {
@@ -99,8 +99,8 @@ footer li {
 
 footer a {
     color: white;
-    line-height: 56px;
-    font-size: 12pt;
+    line-height: 60px;
+    font-size: 6pt;
     font-family: pixelMix;
 }
 
@@ -111,4 +111,14 @@ footer ul {
 
 footer a:hover {
     color: yellowgreen;
+}
+
+/* Media Queries */
+
+/* large laptop screens */
+
+@media screen and (min-width: 1200px) {
+    footer a {
+        font-size: 12pt;
+    }
 }
