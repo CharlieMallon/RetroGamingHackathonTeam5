@@ -218,6 +218,26 @@ _See the [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-ar
 
 ## Credits
 
+### Music / Sound Effects:
+
+<details>
+  <summary>
+  <b>click to view</b>
+  </summary>
+
+  | [**Audio Type**] Media title / description  | Media format  | Credit  | Link to original media source(s)  | 
+| :------------ |:--------------- |:-----|:---------------|
+| **`Background Music`**         |                 |      |                |
+| Heroic Intrusion / background music for the main scene      | .ogg       | [Patrick de Arteaga](#)      | [patrickdearteaga.com](https://patrickdearteaga.com/royalty-free-music/)      |
+| Never Surrender / background music for the start scene      | .ogg       | [Patrick de Arteaga](#)      | [patrickdearteaga.com](https://patrickdearteaga.com/chiptune-8-bit-retro/)      |
+| **`Sound Effects`**         |                 |      |                |
+| explosion / simple explosion when missile or bomb goes off      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
+| explosion2 / simple explosion when missile or bomb goes off      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
+| shooting / simple shooting sound when missile or bomb is fired      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
+| upgrade / simple sound for when the upgrades are bought      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
+
+</details>
+
 ### Code:
 
 ![Kaboom.js logo](docs/images/screenshots/kaboom-logo.jpg)
