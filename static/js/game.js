@@ -5,6 +5,7 @@ import shooting from "./shooting.js"
 import ufoHeavy from './ufoHeavy.js'
 import ufoLight from './ufoLight.js'
 import background from './background.js'
+import cities from './cities.js'
 
 // Start Screen
 scene('start', () => {
@@ -28,6 +29,7 @@ scene('main', () => {
     shooting();
     ufoHeavy();
     ufoLight();
+    cities();
 });
 
 scene("lose", ({ score }) => {
