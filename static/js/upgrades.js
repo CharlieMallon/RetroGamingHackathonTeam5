@@ -9,6 +9,9 @@ loadSprite("explosion_grayed", "sprites/upgrades/explosion_grayed.png");
 loadSprite("speed_grayed", "sprites/upgrades/speed_grayed.png");
 loadSprite("frequency_grayed", "sprites/upgrades/frequency_grayed.png");
 
+// sound effects
+loadSound("upgrade", 'music/upgrade.wav')
+
 const upgrades = () => {
 
     var currentExplosionLevel = 0;
@@ -79,6 +82,9 @@ const upgrades = () => {
                                 removeSalvagedParts(upgradeCost)
                                 currentExplosionLevel ++;
                                 upgradeExplosion(explosionStats[currentExplosionLevel-1])
+                                // upgrade sound effect  
+                                const upgrade = play("upgrade");
+                                upgrade.volume(0.2);
                             }
                         }else{
                             destroy(explosion_button)
@@ -98,6 +104,9 @@ const upgrades = () => {
                                 removeSalvagedParts(upgradeCost)
                                 currentSpeedLevel ++;
                                 upgradeSpeed(speedStats[currentSpeedLevel-1])
+                                // upgrade sound effect  
+                                const upgrade = play("upgrade");
+                                upgrade.volume(0.2);
                             }
                         }else{
                             destroy(speed_button)
@@ -116,6 +125,9 @@ const upgrades = () => {
                                 removeSalvagedParts(upgradeCost)
                                 currentFrequencyLevel ++;
                                 upgradeFrequency(frequencyStats[currentFrequencyLevel-1])
+                                // upgrade sound effect  
+                                const upgrade = play("upgrade");
+                                upgrade.volume(0.2);
                             }
                         }else{
                             destroy(frequency_button)
