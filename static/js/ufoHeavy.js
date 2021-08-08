@@ -4,7 +4,7 @@ import { getRemainingCities } from './cities.js'
 import { destroyCity } from './cities.js';
 
 // load in sprite
-loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
+loadSprite("ufoHeavy", "sprites/enemies/heavy_ufo.png");
 loadSprite("explosion", "sprites/explosion.png");
 loadSprite("mark", "sprites/mark.png");
 
@@ -13,11 +13,11 @@ loadSound("explode", 'music/explosion2.wav')
 loadSound("shooting", 'music/shooting.wav')
 
 var ufoPos = [
-    vec2 (77, 10),
-    vec2 (177, 10),
-    vec2 (277, 10),
-    vec2 (377, 10),
-    vec2 (477, 10),
+    vec2 (77, 25),
+    vec2 (177, 25),
+    vec2 (277, 25),
+    vec2 (377, 25),
+    vec2 (477, 25),
 ]
 
 var enemyShootingDelay
@@ -39,7 +39,7 @@ const ufoHeavy = () => {
             "ufoHeavy",
             pos(element),
             origin('center'),
-            scale(.4),
+            scale(.17),
         ]);
     })
 
