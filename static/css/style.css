@@ -1,3 +1,8 @@
+@font-face {
+    font-family: pixelMix;
+    src: url(../fonts/pixelmix.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -95,6 +100,8 @@ footer li {
 footer a {
     color: white;
     line-height: 56px;
+    font-size: 12pt;
+    font-family: pixelMix;
 }
 
 footer ul {

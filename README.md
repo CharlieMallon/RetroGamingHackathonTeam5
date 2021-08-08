@@ -181,9 +181,9 @@
   </summary>
 
 - [Kaboom.js v0.5.0:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
-- [Google Fonts:](https://fonts.google.com/) used to import the Poppins and Lora fonts into the project's stylesheets
+- [DaFont:](https://www.dafont.com/) used to import the [PixelMix font](https://www.dafont.com/pixelmix.font) into the project's stylesheet
 - [Font Awesome v5.15.3:](https://fontawesome.com/) used to add appropriate and visually appealing site icons
-- [Visual Studio Code:](https://code.visualstudio.com/) used as the team's IDE for the project
+- [Visual Studio Code](https://code.visualstudio.com/)/[Gitpod:](https://gitpod.io/) used as the team's IDEs for the project
 - [Git:](https://git-scm.com/) used for version control by utilising the Gitpod terminal to commit frequently to Git and push all commits to GitHub
 - [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
 - [TinyJPG:](https://tinyjpg.com/) used for image compression
