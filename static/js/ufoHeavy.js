@@ -8,7 +8,7 @@ const upBound = 5;
 const lowBound = 30;
 const heavy = "ufoHeavy";
 const DROP_ORIGIN = vec2(275, 0);
-const BOMB_SPEED = 50;
+const BOMB_SPEED = 30;
 
 // load in sprite
 loadSprite("ufoHeavy", "placeholders/heavy_ufo.png");
