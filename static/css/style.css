@@ -82,7 +82,7 @@ canvas {
 /* ------------------------------------------------------------------------- footer ---- */
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
     font-family: "Poppins", sans-serif;
     height: 60px;
 }
@@ -98,7 +98,7 @@ footer li {
 }
 
 footer a {
-    color: white;
+    color: hsl(0, 0%, 94%);
     line-height: 60px;
     font-size: 6pt;
     font-family: pixelMix;
@@ -110,7 +110,7 @@ footer ul {
 }
 
 footer a:hover {
-    color: yellowgreen;
+    color: hsl(120, 100%, 50%);
 }
 
 /* Media Queries */
