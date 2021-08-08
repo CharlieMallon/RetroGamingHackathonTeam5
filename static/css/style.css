@@ -1,90 +1,105 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  color: hsl(0, 0%, 94%);
-  background-color: hsl(284, 93%, 47%);
-  line-height: 1.5;
-  width: 100%;
+    color: hsl(0, 0%, 94%);
+    background-color: hsl(284, 93%, 47%);
+    line-height: 1.5;
+    width: 100%;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
 }
 
 b,
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 dfn,
 cite,
 em,
 i {
-  font-style: italic;
+    font-style: italic;
 }
 
 address {
-  margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 abbr,
 acronym {
-  border-bottom: .0625rem dotted hsl(0, 0%, 40%);
-  cursor: help;
+    border-bottom: 0.0625rem dotted hsl(0, 0%, 40%);
+    cursor: help;
 }
 
 mark,
 ins {
-  background: hsl(54, 100%, 88%);
-  text-decoration: none;
+    background: hsl(54, 100%, 88%);
+    text-decoration: none;
 }
+
 
 /* Canvas */
 
 canvas {
-  display: block;
-  margin: 0 auto;
-  height: calc(100vh - 40px);
+    display: block;
+    margin: 0 auto;
+    height: calc(100vh - 56px);
 }
+
 
 /* ------------------------------------------------------------------------- footer ---- */
 
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: auto;
-  text-decoration: none;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    height: 56px;
 }
 
 footer div {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+footer li {
+    width: calc(100% / 6 - 8px);
 }
 
 footer a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  padding-top: 15px;
+    color: white;
+    transition: all .2s ease-in-out;
+    line-height: 56px;
 }
 
 footer ul {
-  list-style: none;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+    list-style: none;
+    width: 100%;
 }
 
 footer a:hover {
-  color: yellowgreen;
+    color: yellowgreen;
 }
-
