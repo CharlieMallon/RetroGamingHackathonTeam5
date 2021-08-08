@@ -3,7 +3,7 @@ import { destroyCity } from './cities.js';
 loadSprite('mark', 'sprites/mark.png');
 loadSprite('explosion', 'sprites/explosion.png')
 
-// music
+// sound effects
 loadSound("explode", 'music/explosion.wav')
 
 const SHOOT_ORIGIN = vec2(275, 300);
@@ -86,10 +86,10 @@ const shooting = () => {
                             scale(explosionRadius),
                             'explosion'
                         ])
-                        // game music   
-                        // const explode = play("explode");
-                        // explode.volume(0.2);
-                        // explode.speed(0.2);
+                        // explosion sound effect   
+                        const explode = play("explode");
+                        explode.volume(0.2);
+                        explode.speed(0.2);
 
                         explosion.collides('light', (l) => {
                             destroy(l);
