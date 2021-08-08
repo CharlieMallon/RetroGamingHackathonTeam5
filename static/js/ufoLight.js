@@ -25,10 +25,10 @@ const ufoLight = () => {
         o.move(90, 0);
     });
 
-    collides("light", "missile", (e, m) => {
-        destroy(e);
-        destroy(m);
-    });
+    // collides("light", "missile", (l, m) => {
+    //     destroy(l);
+    //     destroy(m);
+    // });
 };
 
 export default ufoLight
