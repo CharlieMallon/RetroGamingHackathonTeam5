@@ -8,18 +8,27 @@ import background from './background.js'
 import upgrades from './upgrades.js'
 import cities, { restartCities } from './cities.js'
 
+// music
+loadSound("menu", 'music/Never Surrender.ogg')
+
 // Start Screen
 scene('start', () => {
     // all objs are bound to a scene
     add([text('Lunar Conflicts', 32), pos(275, 100), origin('center')]);
     add([text('Insert Coin', 32), pos(275, 200), origin('center'), 'flashy']);
     add([text('press space to start', 12), pos(275, 300), origin('center')]);
+    // game main menu music   
+    const start = play("menu", { loop: true, });
+    start.volume(0.2);
+    start.speed(1);
     // all events are bound to a scene
     action('flashy', (f) => {
         f.color = rand(rgb(0, 0, 0), rgb(1, 1, 1));
     });
     keyPress('space', () => {
+        start.stop()
         go('main');
+        
     });
 });
 
