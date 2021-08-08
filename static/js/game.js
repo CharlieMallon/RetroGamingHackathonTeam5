@@ -5,6 +5,7 @@ import shooting from "./shooting.js"
 import ufoHeavy from './ufoHeavy.js'
 import ufoLight from './ufoLight.js'
 import background from './background.js'
+import upgrades from './upgrades.js'
 import cities, { restartCities } from './cities.js'
 
 // Start Screen
@@ -30,6 +31,7 @@ scene('main', () => {
     ufoHeavy();
     ufoLight();
     cities();
+    upgrades();
 });
 
 scene("lose", ({ score }) => {
