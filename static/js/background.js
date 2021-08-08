@@ -9,6 +9,9 @@ loadSprite('sky', 'sprites/backgrounds/air.png');
 loadSprite('ground', 'sprites/backgrounds/ground.png');
 loadSprite('upgrade', 'sprites/backgrounds/upgrade_area.png');
 
+// music
+ loadSound("main", 'music/Heroic Intrusion.ogg')
+
 // declare main (global) variables
 const TIME_ELAPSED = 0
 
@@ -20,12 +23,17 @@ const background = () => {
     add([sprite('sky'), layer('bg'), pos(0, 0), scale(game_scale)]);
     add([sprite('ground'), layer('bg'), pos(0, 226), scale(game_scale)]);
     add([sprite('upgrade'), layer('bg'), pos(0, 340), scale(game_scale)]);
+    
+    // game music   
+    const music = play("main", { loop: true, });
+    music.volume(0.2);
+    music.speed(1);
 
     // scoreboard element
     const score = add([
         text('0'),
         color(rgb(0, 1, 0)),
-        pos(width()-150, height()-30),
+        pos(width() - 150, height() - 30),
         layer('ui'),
         scale(1),
         {
@@ -33,7 +41,7 @@ const background = () => {
         }
     ]);
 
-    score.action(()=>{
+    score.action(() => {
         score.value = getSalvagedParts();
         score.text = "Upgrade points: " + getSalvagedParts();
     });
@@ -42,7 +50,7 @@ const background = () => {
     const timer = add([
         text(0),
         color(rgb(1, 1, 1)),
-        pos(width()-15, height()-45),
+        pos(width() - 15, height() - 45),
         scale(1),
         origin("topright"),
         layer('ui'),
@@ -56,7 +64,7 @@ const background = () => {
         timer.count += dt();
         timer.value = timer.count.toFixed(0);
         timer.text = "Highscore: " + timer.count.toFixed(0);
-        if (getRemainingCities() == 0){
+        if (getRemainingCities() == 0) {
             go('lose', { score: timer.count.toFixed(0) })
         }
     });

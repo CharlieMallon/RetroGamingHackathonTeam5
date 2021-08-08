@@ -1,90 +1,124 @@
+@font-face {
+    font-family: pixelMix;
+    src: url(../fonts/pixelmix.ttf);
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  color: hsl(0, 0%, 94%);
-  background-color: hsl(284, 93%, 47%);
-  line-height: 1.5;
-  width: 100%;
+    color: hsl(0, 0%, 94%);
+    background-color: hsl(284, 93%, 47%);
+    line-height: 1.5;
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
 }
 
 b,
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 dfn,
 cite,
 em,
 i {
-  font-style: italic;
+    font-style: italic;
 }
 
 address {
-  margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 abbr,
 acronym {
-  border-bottom: .0625rem dotted hsl(0, 0%, 40%);
-  cursor: help;
+    border-bottom: 0.0625rem dotted hsl(0, 0%, 40%);
+    cursor: help;
 }
 
 mark,
 ins {
-  background: hsl(54, 100%, 88%);
-  text-decoration: none;
+    background: hsl(54, 100%, 88%);
+    text-decoration: none;
 }
+
 
 /* Canvas */
 
 canvas {
-  display: block;
-  margin: 0 auto;
-  max-height: calc(100vh - 40px);
+    display: block;
+    margin: 0 auto;
+    max-height: calc(100vh - 60px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 /* ------------------------------------------------------------------------- footer ---- */
 
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  height: auto;
-  text-decoration: none;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Poppins", sans-serif;
+    height: 60px;
 }
 
 footer div {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+footer li {
+    width: calc(100% / 6 - 8px);
 }
 
 footer a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  padding-top: 15px;
+    color: white;
+    line-height: 60px;
+    font-size: 6pt;
+    font-family: pixelMix;
 }
 
 footer ul {
-  list-style: none;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+    list-style: none;
+    width: 100%;
 }
 
 footer a:hover {
-  color: yellowgreen;
+    color: yellowgreen;
 }
 
+/* Media Queries */
+
+/* large laptop screens */
+
+@media screen and (min-width: 1200px) {
+    footer a {
+        font-size: 12pt;
+    }
+}
