@@ -67,13 +67,10 @@ canvas {
     display: block;
     margin: 0 auto;
     max-height: calc(100vh - 56px);
-<<<<<<< HEAD
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-=======
->>>>>>> d198851f02a2b7f2ac7f126e54f669cb174ddad1
 }
 
 
