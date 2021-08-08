@@ -312,6 +312,7 @@ Where code blocks/snippets/suggestions have been incorporated from external sour
 | Never Surrender / background music for the start scene      | .ogg       | [Patrick de Arteaga](#)      | [patrickdearteaga.com](https://patrickdearteaga.com/chiptune-8-bit-retro/)      |
 | **`Sound Effects`**         |                 |      |                |
 | explosion / simple explosion when missile or bomb goes off      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
+| upgrade / simple sound effect when you click on the upgrades      | .wav      | [DrPetter](#), [Eric Fredricksen](#), [Chris McCormick](#)      | [sfxr](http://sfxr.me/)      |
 
 </details>
 
