@@ -12,24 +12,13 @@ const upgrades = () => {
         vec2 (350, 375),
     ]
 
-    // upgradePos.forEach(element => {
-    //     add([
-    //         sprite("explosion_upgrade"),
-    //         "explosion_upgrade",
-    //         pos(element),
-    //         origin('center'),
-    //         scale(.1),
-           
-    //     ]);
-    // }) 
-
     add([
         sprite("explosion_upgrade"),
         "explosion_upgrade",
         pos(upgradePos[0]),
         origin('center'),
         scale(.1),
-       
+
     ]);
 
     add([
