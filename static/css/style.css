@@ -13,6 +13,8 @@ body {
     background-color: hsl(284, 93%, 47%);
     line-height: 1.5;
     width: 100%;
+    height: calc(100vh - 56px);
+    position: relative;
 }
 
 ul {
@@ -64,7 +66,11 @@ ins {
 canvas {
     display: block;
     margin: 0 auto;
-    height: calc(100vh - 56px);
+    max-height: calc(100vh - 56px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -72,9 +78,6 @@ canvas {
 
 footer {
     background-color: rgba(0, 0, 0, 0.8);
-    height: auto;
-    text-decoration: none;
-    color: #fff;
     font-family: "Poppins", sans-serif;
     height: 56px;
 }
@@ -91,7 +94,6 @@ footer li {
 
 footer a {
     color: white;
-    transition: all .2s ease-in-out;
     line-height: 56px;
 }
 
