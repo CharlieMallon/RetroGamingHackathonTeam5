@@ -11,11 +11,17 @@ var millisLast = 0;
 var millis = 0;
 
 var salvagedParts = 0;
+var explosionDuration = 1000;
 
 export function getSalvagedParts(){
     return salvagedParts
 }
 
+export function removeSalvagedParts(n){
+    if (n < salvagedParts){
+        salvagedParts -= n;
+    }
+}
 
 const shooting = () => {
     const position = mouseClick(() => {
@@ -70,7 +76,7 @@ const shooting = () => {
                     //destroy the explosion after a delay
                     setTimeout(function(){ 
                         destroy(explosion); 
-                    }, 1000);
+                    }, explosionDuration);
                 }
             })
 
