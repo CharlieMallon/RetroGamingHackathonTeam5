@@ -15,6 +15,8 @@ var millis = 0;
 var salvagedParts = 0;
 var explosionDuration = 1000;
 
+var testing = false;
+
 export function upgradeSpeed(n){
     missileSpeed = n
 }
@@ -50,6 +52,8 @@ const shooting = () => {
                     'missile',
                 ])
                 
+                //player_missile shooting audio
+
                 missile.action(() => {
                     //calculate vector from shoot origin to mPos
                     var move_vec = vec2((mPos.x - SHOOT_ORIGIN.x), (mPos.y - SHOOT_ORIGIN.y))
@@ -70,7 +74,9 @@ const shooting = () => {
                     if (missile.pos.y < mPos.y){
                         //shake cam
                         camShake(2);
+                        //player_missile explosion audio
 
+                        
                         //instantiate explosion
                         const explosion = add([
                             sprite('explosion'),
@@ -83,13 +89,14 @@ const shooting = () => {
                         explosion.collides('light', (l) => {
                             destroy(l);
                             salvagedParts++;
-                            console.log("shooting.js >> salvagedParts: " + salvagedParts)
                         });
-
-                        explosion.collides('city', (c) => {
-                            destroy(c);
-                            destroyCity();
-                        });
+                        
+                        if (testing){
+                            explosion.collides('city', (c) => {
+                                destroy(c);
+                                destroyCity();
+                            });
+                        }
 
                         //destroy the missile object
                         destroy(missile)

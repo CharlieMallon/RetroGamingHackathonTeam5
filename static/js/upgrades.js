@@ -38,6 +38,20 @@ const upgrades = () => {
         scale(.1),
        
     ]);
+
+    const upgradeClick = mouseClick(() => {
+        var mPos = mousePos()
+        console.log("button clicked at " + mPos.x)
+         var buttonWidth = 10;
+        var buttonHeight = 10;
+        console.log("l " + upgradePos[0] - buttonWidth)
+        console.log("3 " + upgradePos[0] + buttonWidth)
+       
+       
+        if ((mPos.x > (upgradePos[0] - buttonWidth)) && (mPos.x < (upgradePos[0] + buttonWidth)) ){
+            console.log("Upgrade 0 clicked!")
+        }
+    });    
 }
 
 export default upgrades
