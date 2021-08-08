@@ -33,7 +33,7 @@ const upgrades = () => {
     ]);
 
     add([
-        sprite("speed_upgradeg"),
+        sprite("speed_upgrade"),
         "speed_upgrade",
         pos(upgradePos[1]),
         origin('center'),
