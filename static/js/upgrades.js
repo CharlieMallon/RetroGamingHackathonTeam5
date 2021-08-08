@@ -18,10 +18,10 @@ const upgrades = () => {
     var explosionStats = [0.8, 1.2, 1.5]
 
     var currentSpeedLevel = 0;
-    var speedStats = [150, 180, 250]
+    var speedStats = [180, 250, 300]
 
     var currentFrequencyLevel = 0;
-    var frequencyStats = [1200, 500, 200]
+    var frequencyStats = [800, 500, 200]
 
     var upgradePos = [
         vec2 (50, 375),

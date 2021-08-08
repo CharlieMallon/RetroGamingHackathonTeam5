@@ -11,8 +11,8 @@ const SHOOT_ORIGIN = vec2(275, 300);
 
 var baseExplosionRadius = 0.5;
 var explosionRadius = baseExplosionRadius;
-var missileSpeed = 100;
-var shootFrequency = 1500;
+var missileSpeed = 150;
+var shootFrequency = 1000;
 
 var millisLast = 0;
 var millis = 0;
@@ -100,6 +100,11 @@ const shooting = () => {
                             destroy(l);
                             salvagedParts++;
                         });
+
+                        explosion.collides('bomb', (b) => {
+                            destroy(b);
+                        });
+                        
                         
                         if (testing){
                             explosion.collides('city', (c) => {

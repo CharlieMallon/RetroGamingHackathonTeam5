@@ -6,7 +6,7 @@ import ufoHeavy from './ufoHeavy.js'
 import ufoLight from './ufoLight.js'
 import background from './background.js'
 import upgrades from './upgrades.js'
-import cities, { restartCities } from './cities.js'
+import cities, { getRemainingCities, restartCities } from './cities.js'
 
 // music
 loadSound("menu", 'music/Never Surrender.ogg')
@@ -41,6 +41,10 @@ scene('main', () => {
     ufoLight();
     cities();
     upgrades();
+    // if (getRemainingCities() == 0){
+    //     main.stop()
+    //     go('lose')
+    // }
 });
 
 scene("lose", ({ score }) => {
@@ -52,8 +56,7 @@ scene("lose", ({ score }) => {
 	]);
     add([text('press space to restart', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
-        restartCities();
-        go('main');
+        go('main')
     });
 });
 
