@@ -34,10 +34,8 @@ const background = () => {
     ]);
 
     score.action(()=>{
-        score.value = shooting.salvagedParts;
+        score.value = getSalvagedParts();
         score.text = "Upgrade points: " + getSalvagedParts();
-        console.log(getSalvagedParts())
-
     });
 
     // game timer element
@@ -56,14 +54,10 @@ const background = () => {
     // Start the game timer
     timer.action(() => {
         timer.count += dt();
+        timer.value = timer.count.toFixed(0);
         timer.text = "Highscore: " + timer.count.toFixed(0);
-        // if (timer.count > 30) {
-        //     go('lose', { score: score.value })
-        // }
         if (getRemainingCities() == 0){
-            go('lose', { score: score.value })
-        }else{
-            console.log("there's still " + getRemainingCities() + " to go!")
+            go('lose', { score: timer.count.toFixed(0) })
         }
     });
 };
