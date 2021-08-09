@@ -30,15 +30,13 @@
 | Devices |  |  |  | 
 | :------------ |:---------------: |:---------------:|:---------------:|
 |    **MacBook Pro**      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)           
-|    **Acer ΛSPIRE**      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
-|    **Android Smart TV**      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
+|    **Acer ΛSPIRE**      |     ![](docs/images/responsiveness/devices/acer/acer-1.png)            |   ![](docs/images/responsiveness/devices/acer/acer-2.png)   |     ![](docs/images/responsiveness/devices/acer/acer-3.png)     
 
 | Browsers |  |  |  |
 | :------------ |:---------------: |:---------------:|:---------------:|
 |    ![](docs/images/responsiveness/browsers/logos/logo-chrome.png "Google Chrome browser")      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)
 |    ![](docs/images/responsiveness/browsers/logos/logo-edge.png "Microsoft Edge browser")     |     ![](docs/images/responsiveness/browsers/edge/edge-1.png)            |   ![](docs/images/responsiveness/browsers/edge/edge-2.png)   |     ![](docs/images/responsiveness/browsers/edge/edge-3.png)
-|    ![](docs/images/responsiveness/browsers/logos/logo-firefox.png "Firefox browser")      |     ![](docs/images/responsiveness/browsers/firefox/firefox-1.png)            |   ![](docs/images/responsiveness/browsers/firefox/firefox-2.png)   |     ![](docs/images/responsiveness/browsers/firefox/firefox-3.png)  
-|    ![](docs/images/responsiveness/browsers/logos/logo-odin.png "Odin browser")      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
+|    ![](docs/images/responsiveness/browsers/logos/logo-firefox.png "Firefox browser")      |     ![](docs/images/responsiveness/browsers/firefox/firefox-1.png)            |   ![](docs/images/responsiveness/browsers/firefox/firefox-2.png)   |     ![](docs/images/responsiveness/browsers/firefox/firefox-3.png)      
 |    ![](docs/images/responsiveness/browsers/logos/logo-opera.png "Opera browser")      |     ![](docs/images/responsiveness/browsers/opera/opera-1.png)            |   ![](docs/images/responsiveness/browsers/opera/opera-2.png)   |     ![](docs/images/responsiveness/browsers/opera/opera-3.png)
 |    ![](docs/images/responsiveness/browsers/logos/logo-safari.png "Safari browser")      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
 
