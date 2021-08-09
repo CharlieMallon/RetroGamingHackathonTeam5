@@ -21,7 +21,7 @@ const ufoLightRTL = () => {
 
         light_ufo.action(() => {
             light_ufo.move(-120, 0);
-            if (light_ufo.pos.x < 0){
+            if (light_ufo.pos.x < 30){
                 destroy(light_ufo)
             }
         });
