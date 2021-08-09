@@ -91,19 +91,23 @@ How long can you last?
   <b>click to view</b>
   </summary>
 
-  The **[Lunar Conflicts game](https://charliemallon.github.io/RetroGamingHackathonTeam5/)** has three primary 'scenes', each of which is rendered in turn inside the graphical [HTML5 `canvas` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)... 
+  The [Lunar Conflicts game](https://charliemallon.github.io/RetroGamingHackathonTeam5/) has three primary 'scenes', each of which is rendered in turn inside the graphical [HTML5 `canvas` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas)... 
   
+
   ![](docs/images/screenshots/screenshot-lunar-conflicts-start.png)
 
-  1. Start (main menu) scene
+  > 1. Start (main menu) scene
+
 
   ![](docs/images/screenshots/screenshot-lunar-conflicts-game.png)
 
-  2. Gameplay scene
+  > 2. Gameplay scene
+
 
   ![](docs/images/screenshots/screenshot-lunar-conflicts-lose.png)
 
-  3. Lose (game over) scene
+  > 3. Lose (game over) scene
+
 </details>
 
 
@@ -112,6 +116,8 @@ How long can you last?
   <summary>
   <b>click to view</b>
   </summary>
+
+  ![](docs/images/screenshots/screenshot-footer.png)
 
   The `footer` is fixed to the bottom of the page in each of these scenes, and it contains links to the GitHub accounts of all six [Insert Coin team members](https://github.com/CharlieMallon/RetroGamingHackathonTeam5/graphs/contributors).
 </details>
@@ -166,7 +172,6 @@ How long can you last?
 - [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
 - [GitHub Pages:](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages) used to host a live public version of the game site following [deployment](#deployment)
 - [PicResize:](https://picresize.com/) used to crop and resize images
-- [WebAIM (contrast checker):](https://webaim.org/resources/contrastchecker/) / [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) used to ensure site foreground and background colour contrasts meet [WCAG 2 accessibility requirements](https://webaim.org/articles/contrast/)
 - [Can I Use:](https://caniuse.com/) browser compatibility tables used to cross-reference the viability of implementing certain HTML5 elements, CSS3 properties, file formats etc.
 </details>
 
