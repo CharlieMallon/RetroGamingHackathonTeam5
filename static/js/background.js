@@ -33,7 +33,7 @@ const background = () => {
     const score = add([
         text('0'),
         color(rgb(0, 1, 0)),
-        pos(width() - 169, height() - 30),
+        pos(width() - 180, height() - 30),
         layer('ui'),
         scale(1),
         {
@@ -50,9 +50,8 @@ const background = () => {
     const timer = add([
         text(0),
         color(rgb(1, 1, 1)),
-        pos(width() - 17, height() - 45),
+        pos(width() - 140, height() - 45),
         scale(1),
-        origin("topright"),
         layer('ui'),
         {
             count: TIME_ELAPSED,
