@@ -16,7 +16,6 @@ const ufoLightLTR = () => {
         light_ufo = add([
             sprite(leftLight),
             "light",
-            leftLight,
             pos(-50, rand(lowBound, upBound)),
             scale(.17)
         ]);

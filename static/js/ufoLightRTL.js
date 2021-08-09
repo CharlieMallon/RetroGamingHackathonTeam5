@@ -18,7 +18,6 @@ const ufoLightRTL = () => {
         light_ufo = add([
             sprite(rightLight),
             "light",
-            rightLight,
             pos(width() + 50, rand(lowBound, upBound)),
             scale(.17)
         ]);
