@@ -16,17 +16,13 @@
 <details>
   <summary>
   <b>click to view</b>
-
   </summary>
 
-  ##### General visitor to the site:
-   1. As a player, I want to play as long as i want, no time constraint.
-   2. As a player, I want to play with easy clicks on desktop.
-   3. As a player, I want to upgrade if I reach a certain level of game.
-   4. As a player, i want to get powerups at different level of the game.
-   5. As a player, I want to see my progress as a score.
-
-  ##### Returning site user:
+  1. "As a player, I want to be able to play for as long as I want, without any time constraint."
+  2. "As a player, I want to be able to easily use my mouse to play on desktop."
+  3. "As a player, I want to receive an upgrade(s) if I reach a certain level of the game."
+  4. "As a player, I want to receive power-ups at different stages throughout the game."
+  5. "As a player, I want to be able to see my progress through the game visualised on-screen as a score."
 </details>
 
 #### Developer goals:
@@ -35,11 +31,11 @@
   <b>click to view</b>
   </summary>
   
-  1. As a game developer, I want to create a user friendly and easy to play game.
-  2. As a developer, I want to give different levels of difficulties in the game.
-  3. As a developer, I want to give a time counter for the players to see their progress.
-  4. As a developer, I want to give upgrades to the players, when they reach a certain level.
-  5. As a developer, I want to give powerup option to the players.
+  1. "As a game developer, I want to create a user-friendly game that's easy to play."
+  2. "As a developer, I want to create different levels of difficulty within the game."
+  3. "As a developer, I want to build a timer/scoreboard into the game's UI so that players can see their progress."
+  4. "As a developer, I want to give upgrades to players of the game when they reach a certain level."
+  5. "As a developer, I want to make power-ups a feature of the game."
 </details>
 
 ## Project Design
@@ -143,6 +139,7 @@
 
 - [Kaboom.js v0.5.1:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
 - [DaFont:](https://www.dafont.com/) used to import the [PixelMix font](https://www.dafont.com/pixelmix.font) into the project's stylesheet
+- [Balsamiq:](https://balsamiq.com/) used to generate [wireframes](#wireframes-mockups) during the project's design phase
 - [Visual Studio Code](https://code.visualstudio.com/)/[Gitpod:](https://gitpod.io/) used as the team's IDEs for the project
 - [Git:](https://git-scm.com/) used for version control by utilising the Gitpod terminal to commit frequently to Git and push all commits to GitHub
 - [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
@@ -256,21 +253,26 @@ The developers drew inspiration for the game's design and format from the follow
 
 _Media type_ <br> Title/Description  | <br>Format  | <br>Credit(s)  | <br>Link(s) to original source(s)  | 
 | :------------ | :------------ |:--------------- |:---------------|
+|         |                 |      |                |
 | **_Favicon_**        |                 |      |                |
 | **'8-bit Mario Coin'**     |    `.png`    |   [NicePNG](https://www.nicepng.com/)    | [NicePNG](https://www.nicepng.com/ourpic/u2w7a9e6r5r5i1y3_8-bit-mario-coin-mario-coin-pixel/)      |
+|         |                 |      |                |
 | **_Background music_**        |                 |      |                |
 | **'Never Surrender' (start scene)**     |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
 | **'Heroic Intrusion' (main scene)**      |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
+| **'Major Loss' (game over scene)**     |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/chiptune-8-bit-retro/)      |
+|         |                 |      |                |
 | **_Sound effects_**         |                 |      |                |
 | **Missile/Bomb explosion**      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
 | **Upgrade click noise**      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
+|         |                 |      |                |
 | **_`README` hero image_**         |                 |      |                |
 | **'Insert Coin' graphic**      |    `.jpg`    |   [Mr. Fruit (YouTube gaming channel)](https://www.youtube.com/c/MrFruitGamingChannel)    | [Google Images](https://i.ytimg.com/vi/ykYsPnsOC7o/maxresdefault.jpg)      |
 </details>
 
 ## Acknowledgments
 
-
+The team wish to thank their facilitator Maria for giving them plenty of power-ups throughout the project's evolution 🍄
 
 ## Notice
 
