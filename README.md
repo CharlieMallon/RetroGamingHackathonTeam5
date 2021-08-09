@@ -124,26 +124,11 @@ How long can you last?
 
 ### Potential Future Features:
 
-- #### Future feature X:
-<details>
-  <summary>
-  <b>click to view</b>
-  </summary>
-</details>
+- Add expanded upgrades functionality to the game
 
-- #### Future feature Y:
-<details>
-  <summary>
-  <b>click to view</b>
-  </summary>
-</details>
 
-- #### Future feature Z:
-<details>
-  <summary>
-  <b>click to view</b>
-  </summary>
-</details>
+- Make future versions of the game playable across mobile and tablet devices
+
 
 ## Technologies Used
 
