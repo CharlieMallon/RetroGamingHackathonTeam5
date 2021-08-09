@@ -122,10 +122,6 @@ const ufoHeavy = () => {
             clearInterval(ufoShootingUpdate)
         }
     }
-
     var ufoShootingUpdate = setInterval(ufoShooting, enemyShootingDelay)
-
-
-  
 }
 export default ufoHeavy
