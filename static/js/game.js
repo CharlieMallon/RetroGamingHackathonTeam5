@@ -68,7 +68,7 @@ scene("lose", ({ score, music }) => {
         pos(width() / 2, height() / 2),
     ]);
     // tells the player how to try again
-    add([text('press space to return to menu', 12), pos(275, 300), origin('center')]);
+    add([text('Press space to return to menu', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
         location.reload()
     });

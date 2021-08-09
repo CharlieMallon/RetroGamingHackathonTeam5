@@ -59,4 +59,6 @@
   <summary>
   <b>click to view</b>
   </summary>
+
+  At the time of deployment, there is a known audio/performance bug evident when viewing the game in the Safari browser (see [screenshots](#responsiveness) above). The team have decided to simply document this issue for the time being, and will hopefully resume debugging it at a later date. [It's worth noting that even the kaboom.js Twitter account seems a bit perplexed by this Safari bug!](https://twitter.com/Kaboomjs/status/1384362423776333824)
 </details>

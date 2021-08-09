@@ -4,7 +4,7 @@
 
 # Lunar Conflicts game
 
-![Insert Coin arcade machine mockup](docs/images/screenshots/insert-coin.jpg)
+![Lunar Conflicts gameplay footage](docs/images/screenshots/lunar-conflicts-gameplay-footage.gif)
 
 #### [Live link to deployed project](https://charliemallon.github.io/RetroGamingHackathonTeam5/) (hosted on GitHub Pages)
 
