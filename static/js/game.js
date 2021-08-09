@@ -11,6 +11,7 @@ import cities, { getRemainingCities, restartCities } from './cities.js'
 
 // music
 loadSound("menu", 'music/Never Surrender.ogg')
+loadSound("Lose", 'music/Major Loss.ogg')
 
 // Start Screen
 scene('start', () => {
@@ -47,9 +48,9 @@ scene('main', () => {
 
 scene("lose", ({ score, music }) => {
     // Lose menu music
-    const start = play("menu", { loop: true, });
-    start.volume(0.2);
-    start.speed(1);
+    const loseScreenAudio = play("Lose", { loop: true, });
+    loseScreenAudio.volume(0.2);
+    loseScreenAudio.speed(1);
     // adds the loose text with the players score
     add([text('Lunar Conflicts', 32), pos(275, 100), origin('center')]);
     add([
