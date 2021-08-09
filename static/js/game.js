@@ -16,9 +16,12 @@ loadSound("Lose", 'music/Major Loss.ogg')
 // Start Screen
 scene('start', () => {
     // all objs are bound to a scene
-    add([text('Lunar Conflicts', 32), pos(275, 100), origin('center')]);
-    add([text('Insert Coin', 32), pos(275, 200), origin('center'), 'flashy']);
-    add([text('press space to start', 12), pos(275, 300), origin('center')]);
+    add([text('Lunar Conflicts', 32), pos(275, 50), origin('center')]);
+    add([text('Insert Coin', 32), pos(275, 150), origin('center'), 'flashy']);
+    add([text("Shoot small UFO's to salvage parts for upgrades and", 9), pos(275, 240), origin('center')]);
+    add([text("blast the missiles from the sky using your mouse!", 9), pos(275, 260), origin('center')]);
+    add([text("How long can you defend you cities?", 9), pos(275, 280), origin('center')]);
+    add([text('press space to start', 12), pos(275, 350), origin('center')]);
     // game main menu music   
     const start = play("menu", { loop: true, });
     start.volume(0.2);
