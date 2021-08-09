@@ -43,34 +43,40 @@ export function removeSalvagedParts(n) {
 
 const shooting = () => {
 
+    //base player stats
     baseExplosionRadius = 0.5;
     explosionRadius = baseExplosionRadius;
     missileSpeed = 150;
     shootFrequency = 1000;
-    millisLast = 0;
-    millis = 0;
     salvagedParts = 0;
     explosionDuration = 1000;
+
+    //timekeeping variables
+    millisLast = 0;
+    millis = 0;
+
+    //Test mode on or off, affects the ability to kill your own cities
     testing = false;
 
-    console.log("shooting.js >> shooting >> ")
     const position = mouseClick(() => {
+        
         millis = Date.now() - millisLast;
         if (millis > shootFrequency) {
             var mPos = mousePos()
             if (mPos.y < SHOOT_ORIGIN.y) {
+                
                 // explosion sound effect   
                 const missleAudio = play("shooting");
                 missleAudio.volume(0.2);
                 missleAudio.speed(1);
                 millisLast = Date.now()
+                
                 const missile = add([
                     pos(SHOOT_ORIGIN),
                     origin('center'),
                     'missile',
                 ])
 
-                //player_missile shooting audio
                 missile.action(() => {
                     //calculate vector from shoot origin to mPos
                     var move_vec = vec2((mPos.x - SHOOT_ORIGIN.x), (mPos.y - SHOOT_ORIGIN.y))
@@ -87,7 +93,7 @@ const shooting = () => {
                         }
                     });
 
-                    //When missile goes past click pos
+                    //missile reaches mPos
                     if (missile.pos.y < mPos.y) {
                         //shake cam
                         camShake(2);
@@ -100,11 +106,13 @@ const shooting = () => {
                                 scale(explosionRadius),
                                 'explosion'
                             ])
+                        
                             // explosion sound effect   
                         const missileExplodeAudio = play("explode");
                         missileExplodeAudio.volume(0.2);
                         missileExplodeAudio.speed(0.2);
 
+                        //Collision checks
                         explosion.collides('light', (l) => {
                             destroy(l);
                             salvagedParts++;
@@ -114,7 +122,7 @@ const shooting = () => {
                             destroy(b);
                         });
 
-
+                        //testing
                         if (testing) {
                             explosion.collides('city', (c) => {
                                 destroy(c);
@@ -132,8 +140,6 @@ const shooting = () => {
                     }
                 })
             }
-        } else {
-            // console.log("cant shoot")
         }
     });
 }
