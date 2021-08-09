@@ -50,10 +50,9 @@ const ufoHeavy = () => {
     setTimeout(function(){
         minDelay = 1000
         maxDelay = 2
-    }, 10000)
+    }, 12000)
 
-    
-
+    //Instantiate a bomb and target a player city
     function ufoShooting(){     
         enemyShootingDelay = (Math.floor(Math.random() * maxDelay) * 1000) + minDelay;
         randInt = Math.floor(Math.random() * 5)
