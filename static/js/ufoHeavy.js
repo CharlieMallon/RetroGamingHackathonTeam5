@@ -54,12 +54,16 @@ const ufoHeavy = () => {
 
     //Instantiate a bomb and target a player city
     function ufoShooting(){     
+        //Set the time to next shoot
         enemyShootingDelay = (Math.floor(Math.random() * maxDelay) * 1000) + minDelay;
+
+        //get random integers for what ufo will shoot onto what city
         randInt = Math.floor(Math.random() * 5)
         var randomCity= Math.floor(Math.random() * 5)
         var thisUfoPos = vec2(ufoPos[randInt])
         var targetCityPos = vec2(getCityPositions()[randomCity])
-        console.log(targetCityPos.x)
+
+        //instantiate bomb
         const bomb = add([
             pos(ufoPos[randInt]),
             origin('center'),
@@ -118,10 +122,6 @@ const ufoHeavy = () => {
             clearInterval(ufoShootingUpdate)
         }
     }
-
     var ufoShootingUpdate = setInterval(ufoShooting, enemyShootingDelay)
-
-
-  
 }
 export default ufoHeavy
