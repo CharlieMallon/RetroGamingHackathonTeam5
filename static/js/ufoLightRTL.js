@@ -28,7 +28,7 @@ const ufoLightRTL = () => {
     }
 
     if (getRemainingCities() == 0){
-        console.log("NO MORE CITIES")
+        // console.log("NO MORE CITIES")
         destroy(light_ufo)
         clearInterval(lightUfoUpdate)
     }

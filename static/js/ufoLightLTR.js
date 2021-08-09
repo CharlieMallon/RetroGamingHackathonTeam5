@@ -11,7 +11,7 @@ loadSprite("ufoLightLTR", "sprites/enemies/light_ufo_LTR.png");
 
 const ufoLightLTR = () => {
     function spawnLightUfoLTR(){   
-        console.log("LTR")  
+        // console.log("LTR")  
         var light_ufo;
         light_ufo = add([
             sprite("ufoLightLTR"),
@@ -29,7 +29,7 @@ const ufoLightLTR = () => {
     }
 
     if (getRemainingCities() == 0){
-        console.log("NO MORE CITIES")
+        // console.log("NO MORE CITIES")
         destroy(light_ufo)
         clearInterval(lightUfoUpdate)
     }
