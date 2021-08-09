@@ -44,14 +44,18 @@ const ufoHeavy = () => {
     })
 
     var minDelay = 2000;
+    var maxDelay = 4
     enemyShootingDelay = 2000;
 
     setTimeout(function(){
         minDelay = 1000
+        maxDelay = 2
     }, 10000)
 
+    
+
     function ufoShooting(){     
-        enemyShootingDelay = (Math.floor(Math.random() * 4) * 1000) + minDelay;
+        enemyShootingDelay = (Math.floor(Math.random() * maxDelay) * 1000) + minDelay;
         randInt = Math.floor(Math.random() * 5)
         var randomCity= Math.floor(Math.random() * 5)
         var thisUfoPos = vec2(ufoPos[randInt])
