@@ -52,25 +52,18 @@ scene("lose", ({ score, music }) => {
     loseScreenAudio.volume(0.2);
     loseScreenAudio.speed(1);
     // adds the loose text with the players score
-    add([text('Lunar Conflicts', 32), pos(275, 100), origin('center')]);
+    background();
+    add([text('Game Over', 32), pos(275, 100), origin('center')]);
     add([
         text("Score: " + score, 24),
         origin("center"),
         pos(width() / 2, height() / 2),
     ]);
     // tells the player how to try again
-    add([text('press space to play again', 12), pos(275, 300), origin('center')]);
+    add([text('press space to return to menu', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
-        // I think that loaction re-load works better here as it re-sets all parameters.
-        // it is effective tho not as 'clean' UX wise.
-        
-        // restartCities()
-        // // Stops the music when scene changes
-        // start.loop = false
-        // start.stop()
-        // go('main')
         location.reload()
-    });
+    }); 
 });
 
 // Start the game on loading
