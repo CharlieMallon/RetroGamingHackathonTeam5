@@ -51,8 +51,13 @@ scene("lose", ({ score, music }) => {
     const loseScreenAudio = play("Lose", { loop: true, });
     loseScreenAudio.volume(0.2);
     loseScreenAudio.speed(1);
+    // set game scale
+    var game_scale = .69
+    // add background from game
+    add([sprite('sky'), layer('bg'), pos(0, 0), scale(game_scale)]);
+    add([sprite('ground'), layer('bg'), pos(0, 226), scale(game_scale)]);
+    add([sprite('upgrade'), layer('bg'), pos(0, 340), scale(game_scale)]);
     // adds the loose text with the players score
-    background();
     add([text('Game Over', 32), pos(275, 100), origin('center')]);
     add([
         text("Score: " + score, 24),

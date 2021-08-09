@@ -10,6 +10,10 @@
 
 ## User Experience (UX)
 
+Based on the 1980's Missile Command game. Players must defend their cities by shooting down the missiles raining down from the large invading alien ships.  Collect upgrade points by shooting the smaller ships out of the sky and salvaging parts from them.
+
+How long can you last?
+
 ### User stories:
 
 #### User goals:
@@ -86,13 +90,20 @@
   <summary>
   <b>click to view</b>
   </summary>
+  The Lunar conflict game has 3 screens. 
+  
+  1. Main menu screen
+  2. Game screen 
+  3. End Game screen
 </details>
+
 
 - #### `footer`:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
+  The Footer is fixed in the bottom of the page and it has links to the Github accounts of all the teammates of the Insert Coin group.
 </details>
 
 ### Potential Future Features:
@@ -273,6 +284,8 @@ _Media type_ <br> Title/Description  | <br>Format  | <br>Credit(s)  | <br>Link(s
 ## Acknowledgments
 
 The team wish to thank their facilitator Maria for giving them plenty of power-ups throughout the project's evolution 🍄
+
+Note: No UFO's were harmed in the making of this game, we did lose a few cities.
 
 ## Notice
 

@@ -10,7 +10,7 @@ loadSprite('ground', 'sprites/backgrounds/ground.png');
 loadSprite('upgrade', 'sprites/backgrounds/upgrade_area.png');
 
 // music
- loadSound("main", 'music/Heroic Intrusion.ogg')
+loadSound("main", 'music/Heroic Intrusion.ogg')
 
 // declare main (global) variables
 const TIME_ELAPSED = 0

@@ -71,8 +71,8 @@ const ufoHeavy = () => {
             sprite("ufoHeavy"),
             scale(0.001)         
         ])
-   
-        console.log("ufoHeavy.js >> ufoHeavy >> Instantiated a bomb")
+
+        // console.log("ufoHeavy.js >> ufoHeavy >> Instantiated a bomb")
         const shooting = play("shooting");
         shooting.volume(1)
         shooting.speed(0.5)

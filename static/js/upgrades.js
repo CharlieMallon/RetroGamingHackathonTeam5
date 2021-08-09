@@ -22,7 +22,7 @@ const upgrades = () => {
     var currentFrequencyLevel = 0;
     var frequencyStats = [800, 500, 200]
 
-    console.log("upgrades.js >> currentExplosionLevel " + currentExplosionLevel )
+    // console.log("upgrades.js >> currentExplosionLevel " + currentExplosionLevel )
 
     var upgradePos = [
         vec2 (50, 375),
@@ -47,7 +47,6 @@ const upgrades = () => {
         pos(upgradePos[1]),
         origin('center'),
         scale(.1),
-       
     ]);
 
     var frequency_button =  add([
@@ -56,7 +55,6 @@ const upgrades = () => {
         pos(upgradePos[2]),
         origin('center'),
         scale(.1),
-       
     ]);
 
     const upgradeClick = mouseClick(() => {
@@ -73,7 +71,7 @@ const upgrades = () => {
                 // console.log("x is ok")
                 if (mPos.y > buttonAreaY.x && mPos.y < buttonAreaY.y){
                     // console.log("y is ok")
-                   var salvaged_parts = getSalvagedParts()
+                    var salvaged_parts = getSalvagedParts()
                     // console.log("Upgrade " + i + " clicked!")
                     if (i==0){
                         if (currentExplosionLevel < explosionStats.length ){
