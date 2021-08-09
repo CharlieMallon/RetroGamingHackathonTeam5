@@ -86,13 +86,20 @@
   <summary>
   <b>click to view</b>
   </summary>
+  The Lunar conflict game has 3 screens. 
+  
+  1. Main menu screen
+  2. Game screen 
+  3. End Game screen
 </details>
+
 
 - #### `footer`:
 <details>
   <summary>
   <b>click to view</b>
   </summary>
+  The Footer is fixed in the bottom of the page and it has links to the Github accounts of all the teammates of the Insert Coin group.
 </details>
 
 ### Potential Future Features:
