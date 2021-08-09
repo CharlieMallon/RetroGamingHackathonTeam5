@@ -77,7 +77,7 @@ How long can you last?
   </summary>
 
   ![GDD wireframe](docs/GDD/missiles.jpg)
-  ![Game UI design mockup](placeholders/mockup.png)
+  ![Game UI design mockup](docs/wireframes/mockup-lunar-conflicts.png)
   ![Game UI design wireframe](docs/wireframes/wireframe-lunar-conflicts.png)
 </details>
 
