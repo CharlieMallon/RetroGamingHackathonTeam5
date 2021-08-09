@@ -66,7 +66,7 @@
   - **Fallback(s):** `Courier`, `Monaco`, `monospace`
 </details>
 
-### Wireframes & Mockups:
+### Wireframes and Mockups:
 <details>
   <summary>
   <b>click to view</b>
@@ -139,7 +139,7 @@
 
 - [Kaboom.js v0.5.1:](https://kaboomjs.com/) JavaScript library used as the game's core development engine
 - [DaFont:](https://www.dafont.com/) used to import the [PixelMix font](https://www.dafont.com/pixelmix.font) into the project's stylesheet
-- [Balsamiq:](https://balsamiq.com/) used to generate [wireframes](#wireframes-mockups) during the project's design phase
+- [Balsamiq:](https://balsamiq.com/) used to generate [wireframes](#wireframes-and-mockups) during the project's design phase
 - [Visual Studio Code](https://code.visualstudio.com/)/[Gitpod:](https://gitpod.io/) used as the team's IDEs for the project
 - [Git:](https://git-scm.com/) used for version control by utilising the Gitpod terminal to commit frequently to Git and push all commits to GitHub
 - [GitHub:](https://github.com/) used to compile and remotely store the project's codebase following successive local commits initiated from the command line
