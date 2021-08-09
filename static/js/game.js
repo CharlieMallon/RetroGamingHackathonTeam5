@@ -21,7 +21,7 @@ scene('start', () => {
     add([text("Shoot small UFOs to salvage parts for upgrades and", 9), pos(275, 240), origin('center')]);
     add([text("blast the missiles from the sky using your mouse!", 9), pos(275, 260), origin('center')]);
     add([text("How long can you defend your cities?", 9), pos(275, 280), origin('center')]);
-    add([text('press space to start', 12), pos(275, 350), origin('center')]);
+    add([text('Press space to start', 12), pos(275, 350), origin('center')]);
     // game main menu music   
     const start = play("menu", { loop: true, });
     start.volume(0.2);
