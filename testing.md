@@ -30,20 +30,21 @@
 | Devices |  |  |  | 
 | :------------ |:---------------: |:---------------:|:---------------:|
 |    **MacBook Pro**      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)           
-|    **Acer ΛSPIRE**      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)
-|    **Android Smart TV**      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)
+|    **Acer ΛSPIRE**      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
+|    **Android Smart TV**      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
 
 | Browsers |  |  |  |
 | :------------ |:---------------: |:---------------:|:---------------:|
 |    ![](docs/images/responsiveness/browsers/logos/logo-chrome.png "Google Chrome browser")      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)
 |    ![](docs/images/responsiveness/browsers/logos/logo-edge.png "Microsoft Edge browser")     |     ![](docs/images/responsiveness/browsers/edge/edge-1.png)            |   ![](docs/images/responsiveness/browsers/edge/edge-2.png)   |     ![](docs/images/responsiveness/browsers/edge/edge-3.png)
 |    ![](docs/images/responsiveness/browsers/logos/logo-firefox.png "Firefox browser")      |     ![](docs/images/responsiveness/browsers/firefox/firefox-1.png)            |   ![](docs/images/responsiveness/browsers/firefox/firefox-2.png)   |     ![](docs/images/responsiveness/browsers/firefox/firefox-3.png)  
-|    ![](docs/images/responsiveness/browsers/logos/logo-odin.png "Odin browser")      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)
-|    ![](docs/images/responsiveness/browsers/logos/logo-safari.png "Safari browser")      |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-1.png)            |   ![](docs/images/responsiveness/devices/macbook/macbook-pro-2.png)   |     ![](docs/images/responsiveness/devices/macbook/macbook-pro-3.png)
+|    ![](docs/images/responsiveness/browsers/logos/logo-odin.png "Odin browser")      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
+|    ![](docs/images/responsiveness/browsers/logos/logo-opera.png "Opera browser")      |     ![](docs/images/responsiveness/browsers/opera/opera-1.png)            |   ![](docs/images/responsiveness/browsers/opera/opera-2.png)   |     ![](docs/images/responsiveness/browsers/opera/opera-3.png)
+|    ![](docs/images/responsiveness/browsers/logos/logo-safari.png "Safari browser")      |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)            |   ![](docs/images/responsiveness/browsers/safari/safari-1.png)   |     ![](docs/images/responsiveness/browsers/safari/safari-1.png)
 
   - A broad selection of desktop devices were used to test real-life responsiveness. These ranged in size from a [13" MacBook Pro](https://en.wikipedia.org/wiki/MacBook_Pro#3rd_generation_(Retina)) right up to a [JVC 32" LED Android Smart TV](https://www.currys.ie/ieen/tv-and-home-entertainment/televisions/televisions/jvc-lt-32ca690-android-tv-32-smart-hd-ready-led-tv-with-google-assistant-10199524-pdt.html) (using this device's native [Odin browser/ADK](https://play.google.com/store/apps/details?id=com.hisense.odinbrowser&hl=en&gl=US)). Other devices used in testing included an [Acer ΛSPIRE F15 Windows laptop](https://en.wikipedia.org/wiki/Acer_Aspire_laptops#Aspire_F_series).
 
-  - In addition to Chrome, Firefox and the emerging Odin smart TV browser, the site was also viewed numerous times in the Safari and Microsoft Edge browsers prior to completion.
+  - In addition to Chrome, Firefox and the emerging Odin smart TV browser, the site was also viewed numerous times in the Safari, Opera and Microsoft Edge browsers prior to completion.
 </details>
 
 ### Bugs:

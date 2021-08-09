@@ -10,6 +10,10 @@
 
 ## User Experience (UX)
 
+Based on the 1980's Missile Command game. Players must defend their cities by shooting down the missiles raining down from the large invading alien ships.  Collect upgrade points by shooting the smaller ships out of the sky and salvaging parts from them.
+
+How long can you last?
+
 ### User stories:
 
 #### User goals:
