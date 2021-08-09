@@ -260,6 +260,7 @@ _Media type_ <br> Title/Description  | <br>Format  | <br>Credit(s)  | <br>Link(s
 | **_Background music_**        |                 |      |                |
 | **'Never Surrender' (start scene)**     |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
 | **'Heroic Intrusion' (main scene)**      |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/royalty-free-music/)      |
+| **'Major Loss' (game over scene)**     |    `.ogg`    |   [Patrick de Arteaga](https://patrickdearteaga.com/)    | [Patrick de Arteaga: Royalty-Free Music](https://patrickdearteaga.com/chiptune-8-bit-retro/)      |
 |         |                 |      |                |
 | **_Sound effects_**         |                 |      |                |
 | **Missile/Bomb explosion**      |    `.wav`    |   [DrPetter](http://www.drpetter.se/project_sfxr.html), [Eric Fredricksen](http://fredricksen.net/), [Chris McCormick](https://github.com/chr15m/jsfxr)    | [jsfxr](http://sfxr.me/)      |
