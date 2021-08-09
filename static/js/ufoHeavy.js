@@ -44,12 +44,12 @@ const ufoHeavy = () => {
     })
 
     var minDelay = 2000;
-    var maxDelay = 4
+    var maxDelay = 5
     enemyShootingDelay = 2000;
 
     setTimeout(function(){
         minDelay = 1000
-        maxDelay = 2
+        maxDelay = 1
     }, 12000)
 
     //Instantiate a bomb and target a player city
@@ -90,7 +90,6 @@ const ufoHeavy = () => {
                 }
             });
             if (bomb.pos.y > 280) {
-                
                 const explosion = add([
                     sprite('explosion'),
                     pos(bomb.pos),
@@ -116,7 +115,6 @@ const ufoHeavy = () => {
     
         });
         if (getRemainingCities() == 0){
-            console.log("NO MORE CITIES")
             destroy(bomb)
             shooting.stop()
             clearInterval(ufoShootingUpdate)
