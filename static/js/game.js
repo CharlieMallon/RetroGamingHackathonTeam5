@@ -18,9 +18,9 @@ scene('start', () => {
     // all objs are bound to a scene
     add([text('Lunar Conflicts', 32), pos(275, 50), origin('center')]);
     add([text('Insert Coin', 32), pos(275, 150), origin('center'), 'flashy']);
-    add([text("Shoot small UFO's to salvage parts for upgrades and", 9), pos(275, 240), origin('center')]);
+    add([text("Shoot small UFOs to salvage parts for upgrades and", 9), pos(275, 240), origin('center')]);
     add([text("blast the missiles from the sky using your mouse!", 9), pos(275, 260), origin('center')]);
-    add([text("How long can you defend you cities?", 9), pos(275, 280), origin('center')]);
+    add([text("How long can you defend your cities?", 9), pos(275, 280), origin('center')]);
     add([text('press space to start', 12), pos(275, 350), origin('center')]);
     // game main menu music   
     const start = play("menu", { loop: true, });
@@ -56,7 +56,7 @@ scene("lose", ({ score, music }) => {
     loseScreenAudio.speed(1);
     // set game scale
     var game_scale = .69
-    // add background from game
+        // add background from game
     add([sprite('sky'), layer('bg'), pos(0, 0), scale(game_scale)]);
     add([sprite('ground'), layer('bg'), pos(0, 226), scale(game_scale)]);
     add([sprite('upgrade'), layer('bg'), pos(0, 340), scale(game_scale)]);
@@ -71,7 +71,7 @@ scene("lose", ({ score, music }) => {
     add([text('press space to return to menu', 12), pos(275, 300), origin('center')]);
     keyPress('space', () => {
         location.reload()
-    }); 
+    });
 });
 
 // Start the game on loading
