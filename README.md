@@ -274,6 +274,8 @@ _Media type_ <br> Title/Description  | <br>Format  | <br>Credit(s)  | <br>Link(s
 
 The team wish to thank their facilitator Maria for giving them plenty of power-ups throughout the project's evolution 🍄
 
+Note: No UFO's were harmed in the making of this game, we did lose a few cities.
+
 ## Notice
 
 This site has been created for development purposes only.
